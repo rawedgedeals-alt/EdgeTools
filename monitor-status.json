@@ -1,0 +1,106 @@
+{
+  "last_checked_utc": "2026-10-14T15:49:46+00:00",
+  "note": "Automated link checks only. Unknown does not imply a provider is offline. No offer, price, or affiliate verification is claimed.",
+  "providers": [
+    {
+      "name": "Semrush",
+      "url": "https://www.semrush.com/",
+      "link_status": "unknown"
+    },
+    {
+      "name": "HubSpot",
+      "url": "https://www.hubspot.com/",
+      "link_status": "reachable"
+    },
+    {
+      "name": "Shopify",
+      "url": "https://www.shopify.com/",
+      "link_status": "reachable"
+    },
+    {
+      "name": "Kit",
+      "url": "https://kit.com/",
+      "link_status": "unknown"
+    },
+    {
+      "name": "Notion",
+      "url": "https://www.notion.com/",
+      "link_status": "reachable"
+    },
+    {
+      "name": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "link_status": "unknown"
+    },
+    {
+      "name": "Claude",
+      "url": "https://claude.ai/",
+      "link_status": "unknown"
+    },
+    {
+      "name": "Perplexity",
+      "url": "https://www.perplexity.ai/",
+      "link_status": "unknown"
+    },
+    {
+      "name": "Canva",
+      "url": "https://www.canva.com/",
+      "link_status": "unknown"
+    },
+    {
+      "name": "Grammarly",
+      "url": "https://www.grammarly.com/",
+      "link_status": "unknown"
+    },
+    {
+      "name": "Zapier",
+      "url": "https://zapier.com/",
+      "link_status": "reachable"
+    },
+    {
+      "name": "Airtable",
+      "url": "https://www.airtable.com/",
+      "link_status": "reachable"
+    },
+    {
+      "name": "Figma",
+      "url": "https://www.figma.com/",
+      "link_status": "reachable"
+    },
+    {
+      "name": "Descript",
+      "url": "https://www.descript.com/",
+      "link_status": "reachable"
+    },
+    {
+      "name": "Buffer",
+      "url": "https://buffer.com/",
+      "link_status": "reachable"
+    },
+    {
+      "name": "Mailchimp",
+      "url": "https://mailchimp.com/",
+      "link_status": "reachable"
+    },
+    {
+      "name": "Calendly",
+      "url": "https://calendly.com/",
+      "link_status": "reachable"
+    },
+    {
+      "name": "Loom",
+      "url": "https://www.loom.com/",
+      "link_status": "reachable"
+    },
+    {
+      "name": "Make",
+      "url": "https://www.make.com/",
+      "link_status": "reachable"
+    },
+    {
+      "name": "Webflow",
+      "url": "https://webflow.com/",
+      "link_status": "reachable"
+    }
+  ]
+}
