@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://edgetools-7wus.vercel.app/sitemap.xml
