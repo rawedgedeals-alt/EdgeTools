@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Semrush",
+    "category": "Marketing",
+    "description": "SEO, content marketing and search visibility research.",
+    "url": "https://www.semrush.com/"
+  },
+  {
+    "name": "HubSpot",
+    "category": "Marketing",
+    "description": "CRM, sales and marketing automation software.",
+    "url": "https://www.hubspot.com/"
+  },
+  {
+    "name": "Shopify",
+    "category": "Commerce",
+    "description": "Build and manage an online store.",
+    "url": "https://www.shopify.com/"
+  },
+  {
+    "name": "Kit",
+    "category": "Creators",
+    "description": "Email marketing and newsletters for creators.",
+    "url": "https://kit.com/"
+  },
+  {
+    "name": "Notion",
+    "category": "Productivity",
+    "description": "Docs, projects and collaborative workspaces.",
+    "url": "https://www.notion.com/"
+  }
+]
