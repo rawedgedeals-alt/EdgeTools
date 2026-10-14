@@ -3,30 +3,140 @@
     "name": "Semrush",
     "category": "Marketing",
     "description": "SEO, content marketing and search visibility research.",
+    "bestFor": "SEO research",
     "url": "https://www.semrush.com/"
   },
   {
     "name": "HubSpot",
     "category": "Marketing",
-    "description": "CRM, sales and marketing automation software.",
+    "description": "CRM, marketing automation and sales tools.",
+    "bestFor": "CRM and sales",
     "url": "https://www.hubspot.com/"
   },
   {
     "name": "Shopify",
     "category": "Commerce",
-    "description": "Build and manage an online store.",
+    "description": "Build an online store and manage commerce operations.",
+    "bestFor": "Online stores",
     "url": "https://www.shopify.com/"
   },
   {
     "name": "Kit",
     "category": "Creators",
-    "description": "Email marketing and newsletters for creators.",
+    "description": "Email newsletters and marketing tools for creators.",
+    "bestFor": "Creator newsletters",
     "url": "https://kit.com/"
   },
   {
     "name": "Notion",
     "category": "Productivity",
-    "description": "Docs, projects and collaborative workspaces.",
+    "description": "Notes, docs, projects and collaborative workspaces.",
+    "bestFor": "Team organization",
     "url": "https://www.notion.com/"
+  },
+  {
+    "name": "ChatGPT",
+    "category": "AI",
+    "description": "AI assistant for writing, brainstorming, research and everyday tasks.",
+    "bestFor": "Ideas and drafting",
+    "url": "https://chatgpt.com/"
+  },
+  {
+    "name": "Claude",
+    "category": "AI",
+    "description": "AI assistant for writing, analysis and complex tasks.",
+    "bestFor": "Writing and analysis",
+    "url": "https://claude.ai/"
+  },
+  {
+    "name": "Perplexity",
+    "category": "AI",
+    "description": "AI-powered search for researching questions and finding sources.",
+    "bestFor": "Research discovery",
+    "url": "https://www.perplexity.ai/"
+  },
+  {
+    "name": "Canva",
+    "category": "Design",
+    "description": "Templates and design tools for visuals, presentations and content.",
+    "bestFor": "Graphics and presentations",
+    "url": "https://www.canva.com/"
+  },
+  {
+    "name": "Grammarly",
+    "category": "Productivity",
+    "description": "Assistance with spelling, clarity, tone and editing.",
+    "bestFor": "Clearer writing",
+    "url": "https://www.grammarly.com/"
+  },
+  {
+    "name": "Zapier",
+    "category": "Automation",
+    "description": "Connect apps and automate repetitive workflows.",
+    "bestFor": "Connecting applications",
+    "url": "https://zapier.com/"
+  },
+  {
+    "name": "Airtable",
+    "category": "Productivity",
+    "description": "Customizable data tables and collaborative workflows.",
+    "bestFor": "Flexible databases",
+    "url": "https://www.airtable.com/"
+  },
+  {
+    "name": "Figma",
+    "category": "Design",
+    "description": "Collaborative UI design, prototypes and design systems.",
+    "bestFor": "Interface design",
+    "url": "https://www.figma.com/"
+  },
+  {
+    "name": "Descript",
+    "category": "Creators",
+    "description": "Edit recorded video and audio with transcript-based tools.",
+    "bestFor": "Podcasts and videos",
+    "url": "https://www.descript.com/"
+  },
+  {
+    "name": "Buffer",
+    "category": "Marketing",
+    "description": "Plan and schedule social media content.",
+    "bestFor": "Social scheduling",
+    "url": "https://buffer.com/"
+  },
+  {
+    "name": "Mailchimp",
+    "category": "Marketing",
+    "description": "Email campaigns and audience management.",
+    "bestFor": "Email marketing",
+    "url": "https://mailchimp.com/"
+  },
+  {
+    "name": "Calendly",
+    "category": "Productivity",
+    "description": "Booking pages and calendar coordination.",
+    "bestFor": "Meeting scheduling",
+    "url": "https://calendly.com/"
+  },
+  {
+    "name": "Loom",
+    "category": "Creators",
+    "description": "Share screen recordings and video messages.",
+    "bestFor": "Video explainers",
+    "url": "https://www.loom.com/"
+  },
+  {
+    "name": "Make",
+    "category": "Automation",
+    "description": "Build visual automations connecting apps and services.",
+    "bestFor": "Visual automations",
+    "url": "https://www.make.com/"
+  },
+  {
+    "name": "Webflow",
+    "category": "Commerce",
+    "description": "Visual website building with CMS and hosting tools.",
+    "bestFor": "Marketing websites",
+    "url": "https://webflow.com/"
   }
 ]

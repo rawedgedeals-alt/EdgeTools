@@ -1,4 +1,9 @@
 {
-  "note": "Add only approved program tracking URLs. Provider URLs in tools.json remain non-affiliate until approved.",
-  "programs": []
+  "note": "After affiliate approval, add an item to programs with name matching tools.json, approved:true and the official HTTPS referral URL. Unapproved items never replace original provider links.",
+  "programs": [],
+  "example": {
+    "name": "Semrush",
+    "approved": false,
+    "url": "https://example.com/your-approved-affiliate-link"
+  }
 }
