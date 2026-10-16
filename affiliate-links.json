@@ -1,6 +1,12 @@
 {
   "note": "After affiliate approval, add an item to programs with name matching tools.json, approved:true and the official HTTPS referral URL. Unapproved items never replace original provider links.",
-  "programs": [],
+  "programs": [
+    {
+      "name": "Shopify",
+      "approved": true,
+      "url": "https://shopify.pxf.io/c/7981408/1061744/13624"
+    }
+  ],
   "example": {
     "name": "Semrush",
     "approved": false,
