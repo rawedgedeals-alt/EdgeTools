@@ -7,7 +7,7 @@
   let consent = null, started = false;
   try { consent = localStorage.getItem(key); } catch {}
   window.dataLayer = window.dataLayer || [];
-  const gtag = (...args) => window.dataLayer.push(args);
+  function gtag() { window.dataLayer.push(arguments); }
   const adsDenied = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' };
   function safePage() {
     const url = new URL(location.origin + location.pathname);
