@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Free Business Website Starter & Live Builder | WHATIF</title>
-<meta name="description" content="Build a beautiful one-page small business website. Customize the headline, services, colors and contact details; preview your site instantly and export a standalone HTML file. Free, no signup.">
+<meta name="description" content="Make a simple business website in three steps: business name, what you do and contact details. Preview as you type, then download your page. Free and no signup.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://discoverwhatif.com/website-starter.html">
 <meta name="theme-color" content="#070b12">
@@ -32,16 +32,16 @@ h1 em{font-style:normal;color:var(--mint)}.hero p{font-size:18px;color:#c7d9e6;m
 .panel h2{margin:0 0 4px;font-size:22px;letter-spacing:-.035em}
 .muted{font-size:13px;color:var(--sub);margin:6px 0 19px}
 fieldset{border:0;padding:0;margin:0}legend{color:#7ffbd2;text-transform:uppercase;letter-spacing:.15em;font-size:11px;font-weight:900;margin:25px 0 8px}
-label{display:block;font-size:12px;font-weight:800;color:#d2e6ef;margin:13px 0 5px}
-input,select,textarea{width:100%;background:#0b1829;color:#eafbff;border:1px solid #446479;border-radius:9px;padding:11px 12px;font:inherit;font-size:14px}
-textarea{resize:vertical;min-height:72px}
+label{display:block;font-size:15px;font-weight:800;color:#d2e6ef;margin:14px 0 6px}
+input,select,textarea{width:100%;min-height:50px;background:#0b1829;color:#eafbff;border:1px solid #7395a9;border-radius:10px;padding:12px 14px;font:inherit;font-size:16px}
+textarea{resize:vertical;min-height:98px}
 input::placeholder,textarea::placeholder{color:#8fa9ba}input:focus-visible,textarea:focus-visible,select:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #6fddff;outline-offset:3px}
 .two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
-.btn{cursor:pointer;border:1px solid #41d99c;border-radius:11px;padding:12px 15px;background:#12362e;color:#dafff0;font-weight:900;font-size:14px}
+.btn{cursor:pointer;min-height:50px;border:1px solid #41d99c;border-radius:11px;padding:12px 16px;background:#12362e;color:#dafff0;font-weight:900;font-size:16px}
 .btn:hover{filter:brightness(1.1)}.btn-primary{background:var(--mint);color:#061e16;border-color:var(--mint)}
 .btn-muted{border-color:#536c80;color:#e0eafa;background:#1a2b3f}
-.controls{display:flex;gap:9px;flex-wrap:wrap;margin:17px 0 8px}.controls button{flex:1;min-width:122px}
-#status{font-size:12px;color:#9cf9d4;min-height:18px;margin:12px 0 0}
+.controls{display:flex;gap:9px;flex-wrap:wrap;margin:19px 0 8px}.controls button{flex:1;min-width:122px} .quick-start{display:flex;flex-direction:column;gap:2px}.quick-start .question{font-size:17px;line-height:1.35;margin:16px 0 7px}.step{display:inline-grid;place-items:center;background:#26f3a0;color:#042519;font-size:15px;font-weight:1000;width:29px;height:29px;border-radius:50%;margin-right:8px}.help{margin:3px 0 4px;color:#bdd5df;font-size:14px}.advanced{margin-top:17px;border-top:1px solid #445e73;padding-top:16px}.advanced summary{list-style:auto;cursor:pointer;padding:12px 7px;font-size:16px;font-weight:800;color:#b9e6d9}.advanced summary strong{color:#62f6ba}.advanced-content{padding:4px 0 6px}.advanced fieldset{margin-top:10px}#status{font-size:14px;color:#9cf9d4;min-height:18px;margin:12px 0 0}
+
 .preview-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
 .preview-heading p{font-size:12px;margin:2px 0 0;color:#b2c7d3}
 .preview-actions{display:flex;gap:8px}
@@ -63,47 +63,60 @@ footer{padding:21px 5%;border-top:1px solid #ffffff25;color:#a0b4c3;text-align:c
 <main>
 <section class="hero">
 <div class="eyebrow">WHATIF LAB / CREATE SOMETHING REAL</div>
-<h1>Your business. Your page. <em>Your rules.</em></h1>
-<p>Start with a polished business website, customize it to fit what you do, and download the real HTML file. No software subscription, no signup, no artificial credit limits.</p>
-<div class="pills"><span>FREE BUILDER</span><span>LIVE PREVIEW</span><span>DESKTOP + MOBILE</span><span>KEEP YOUR SOURCE FILE</span></div>
+<h1>Making a website <em>should be easy.</em></h1>
+<p>Just type your business name, what you do, and how customers reach you. You'll see your page take shape immediately. No experience needed, and no account to create.</p>
+<div class="pills"><span>JUST 3 QUESTIONS</span><span>AUTOMATIC SAVING</span><span>LARGE, CLEAR CONTROLS</span><span>FREE DOWNLOAD</span></div>
 </section>
 <div class="studio">
-<section class="panel" aria-label="Website builder controls">
-<h2>Build your first page</h2>
-<p class="muted">Change anything on the left. Watch your website take shape on the right.</p>
+<section class="panel" aria-label="Easy website builder">
+<h2>Let's make your website</h2>
+<p class="muted">Answer just three questions. Your page updates and saves on this device as you type. Nothing to sign up for.</p>
 <form id="builder">
-<fieldset><legend>01 / Your brand</legend>
-<label for="business">Business name</label><input id="business" maxlength="70" autocomplete="organization" placeholder="e.g. North Star Services">
-<label for="tagline">Headline</label><input id="tagline" maxlength="105" placeholder="Your next big idea starts here">
-<label for="description">What do you do?</label><textarea id="description" maxlength="360" placeholder="Explain what makes your business helpful."></textarea>
+<div class="quick-start">
+<label class="question" for="business"><span class="step">1</span> What is your business called?</label>
+<input id="business" maxlength="70" autocomplete="organization" placeholder="Example: Mary's Cleaning Service">
+<label class="question" for="description"><span class="step">2</span> What do you do?</label>
+<textarea id="description" maxlength="360" rows="3" placeholder="Example: We clean homes and offices in Dallas."></textarea>
+<label class="question" for="quick-contact"><span class="step">3</span> How can customers reach you?</label>
+<input id="quick-contact" maxlength="140" autocomplete="off" inputmode="text" placeholder="Email address or phone number" aria-describedby="contact-hint">
+<p id="contact-hint" class="help">A phone number or email is fine. You can leave this blank for now.</p>
+</div>
+<div class="controls">
+<button type="button" class="btn btn-primary" id="download">Download my website</button>
+</div>
+<p id="status" aria-live="polite"></p>
+<details class="advanced" id="advanced">
+<summary>Want to add colors, a headline or more details? <strong>Optional</strong></summary>
+<div class="advanced-content">
+<fieldset><legend>Make it yours</legend>
+<label for="tagline">Main headline (optional)</label><input id="tagline" maxlength="105" placeholder="We'll write Welcome to your business if left blank">
 <div class="two">
-<div><label for="industry">Business type</label><select id="industry"><option value="service">Local services</option><option value="creative">Creative studio</option><option value="consultant">Consulting</option><option value="shop">Products & shop</option><option value="portfolio">Personal brand</option></select></div>
-<div><label for="theme">Color palette</label><select id="theme"><option value="mint">Emerald / navy</option><option value="blue">Electric blue</option><option value="amber">Premium gold</option><option value="rose">Vibrant rose</option></select></div>
+<div><label for="industry">Type of business</label><select id="industry"><option value="service">Local services</option><option value="creative">Creative studio</option><option value="consultant">Consulting</option><option value="shop">Products & shop</option><option value="portfolio">Personal brand</option></select></div>
+<div><label for="theme">Color choices</label><select id="theme"><option value="mint">Green / navy</option><option value="blue">Blue</option><option value="amber">Gold</option><option value="rose">Pink / rose</option></select></div>
 </div>
 </fieldset>
-<fieldset><legend>02 / What you offer</legend>
+<fieldset><legend>Reasons to choose you</legend>
 <label for="service1">Highlight #1</label><input id="service1" maxlength="65" placeholder="Experienced professionals">
 <label for="service2">Highlight #2</label><input id="service2" maxlength="65" placeholder="Fast, friendly service">
 <label for="service3">Highlight #3</label><input id="service3" maxlength="65" placeholder="Clear communication">
 </fieldset>
-<fieldset><legend>03 / Your customers</legend>
+<fieldset><legend>More ways to connect</legend>
+<p class="help">Add both if you want customers to email and call you. The quick contact box above shows one of these.</p>
 <label for="email">Business email</label><input id="email" type="email" maxlength="140" autocomplete="email" placeholder="hello@example.com">
-<label for="phone">Phone (optional)</label><input id="phone" type="tel" maxlength="35" autocomplete="tel" placeholder="(555) 123-4567">
-<label for="cta">Button label</label><input id="cta" maxlength="40" placeholder="GET IN TOUCH">
-<label for="location">Service area (optional)</label><input id="location" maxlength="90" placeholder="Serving your city and beyond">
+<label for="phone">Business phone</label><input id="phone" type="tel" maxlength="35" autocomplete="tel" placeholder="(555) 123-4567">
+<label for="cta">Contact button text</label><input id="cta" maxlength="40" placeholder="GET IN TOUCH">
+<label for="location">Where you serve customers (optional)</label><input id="location" maxlength="90" placeholder="Serving your city and beyond">
 </fieldset>
-<div class="controls">
-<button type="button" class="btn btn-primary" id="download">↓ Download website</button>
-<button type="button" class="btn btn-muted" id="sample">Load example</button>
+<button type="button" class="btn btn-muted" id="sample">Try an example business</button>
 </div>
-<p id="status" aria-live="polite"></p>
+</details>
 </form>
 </section>
 <section class="panel" aria-label="Website preview">
-<div class="preview-heading"><div><h2>Live preview</h2><p>Just like the page your customers will see.</p></div><div class="preview-actions"><button type="button" class="btn btn-muted" id="desktop" aria-pressed="true">Desktop</button><button type="button" class="btn btn-muted" id="mobile" aria-pressed="false">Mobile</button></div></div>
+<div class="preview-heading"><div><h2>Live preview</h2><p>See exactly what your website looks like as you type.</p></div><div class="preview-actions"><button type="button" class="btn btn-muted" id="desktop" aria-pressed="true">Desktop</button><button type="button" class="btn btn-muted" id="mobile" aria-pressed="false">Mobile</button></div></div>
 <div id="frame" class="frame"><div class="frame-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="address">Your future website preview</span></div>
 <iframe id="site-preview" title="Preview of your generated website" sandbox="" loading="eager"></iframe></div>
-<div class="note"><strong>This builds a real standalone HTML page.</strong> You own the exported page file and can host it with a provider of your choice. Publishing it on a custom domain, accepting payments, forms, email delivery, and managing site hosting are <em>not</em> included in this free starter yet. No sensitive information or user photos are uploaded to our servers.</div>
+<div class="note"><strong>Your website file is yours to keep.</strong> Clicking “Download my website” saves the page file to your device. It doesn't put the page online yet. Publishing on the internet, taking payments, and running a contact form are separate steps we have not added. Your answers stay on this device.</div>
 </section>
 </div>
 </main>
@@ -113,17 +126,18 @@ footer{padding:21px 5%;border-top:1px solid #ffffff25;color:#a0b4c3;text-align:c
 "use strict";
 var KEY="whatif_website_starter_v1";
 var inputIds=["business","tagline","description","industry","theme","service1","service2","service3","email","phone","cta","location"];
-var defaults={business:"North Star Studio",tagline:"Big ideas deserve a beautiful start.",description:"We help ambitious people move from inspiration to action with thoughtful service, clear communication, and attention to the details.",industry:"creative",theme:"mint",service1:"Made for your goals",service2:"Thoughtfully designed",service3:"Real people, real answers",email:"hello@example.com",phone:"",cta:"LET'S TALK",location:"Built for wherever you are"};
+var defaults={business:"",tagline:"",description:"",industry:"service",theme:"mint",service1:"Reliable service",service2:"Friendly communication",service3:"Ready to help",email:"",phone:"",cta:"GET IN TOUCH",location:""};
+var example={business:"Mary's Cleaning Service",tagline:"A cleaner home. A happier day.",description:"Friendly home and office cleaning in Dallas. We make it easy to enjoy a fresh space.",industry:"service",theme:"mint",service1:"Friendly local service",service2:"Clear upfront communication",service3:"Flexible scheduling",email:"hello@example.com",phone:"",cta:"CONTACT MARY",location:"Serving Dallas and nearby communities"};
 var themes={mint:{accent:"#17dd98",deep:"#061a20",glow:"#26cfa855"},blue:{accent:"#45c7ff",deep:"#0c1930",glow:"#358eff66"},amber:{accent:"#ffd17b",deep:"#291c15",glow:"#facb4566"},rose:{accent:"#ff7dbb",deep:"#281827",glow:"#ff67c266"}};
 function esc(v){return String(v==null?"":v).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
 function get(){var data={};inputIds.forEach(function(id){var el=document.getElementById(id);data[id]=el?el.value:"";});return data;}
-function set(data){inputIds.forEach(function(id){var el=document.getElementById(id);if(!el)return;var v=Object.prototype.hasOwnProperty.call(data,id)?data[id]:defaults[id];el.value=String(v==null?"":v).slice(0,el.maxLength>0?el.maxLength:200);});}
+function set(data){inputIds.forEach(function(id){var el=document.getElementById(id);if(!el)return;var v=Object.prototype.hasOwnProperty.call(data,id)?data[id]:defaults[id];el.value=String(v==null?"":v).slice(0,el.maxLength>0?el.maxLength:200);});document.getElementById("quick-contact").value=data.email||data.phone||"";}
 function safeEmail(value){value=String(value||"").trim();return /^[^\s@<>:"'\\]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(value)&&value.length<=140?value:"";}
 function safeTel(value){value=String(value||"");var clean=value.replace(/[^0-9+]/g,"");return clean.replace(/(?!^)\+/g,"").length>=7?clean.replace(/(?!^)\+/g,""):"";}
 function page(d){
 var palette=themes[d.theme]||themes.mint;
 var brand=esc(d.business.trim()||"Your Business");
-var headline=esc(d.tagline.trim()||"Make something great.");
+var headline=esc(d.tagline.trim()||("Welcome to "+(d.business.trim()||"your business")));
 var body=esc(d.description.trim()||"Helping customers get things done with care and confidence.");
 var category=({service:"SERVICES",creative:"CREATIVE STUDIO",consultant:"CONSULTING",shop:"SMALL BUSINESS",portfolio:"PERSONAL BRAND"})[d.industry]||"BUSINESS";
 var notes=[d.service1,d.service2,d.service3].filter(function(t){return t&&t.trim();}).map(function(t,i){return '<div class="item"><span>0'+(i+1)+'</span><strong>'+esc(t)+'</strong></div>';}).join("");
@@ -147,14 +161,18 @@ return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="v
 }
 function preview(){var html=page(get());document.getElementById("site-preview").srcdoc=html;}
 var timeout;
-function save(){var data=get();try{localStorage.setItem(KEY,JSON.stringify(data));document.getElementById("status").textContent="Saved privately on this device."; }catch(e){document.getElementById("status").textContent="Local saving unavailable; download your website to keep a copy.";}clearTimeout(timeout);timeout=setTimeout(preview,100);}
-var builder=document.getElementById("builder");builder.addEventListener("input",save);builder.addEventListener("change",save);
+function save(){var data=get();try{localStorage.setItem(KEY,JSON.stringify(data));document.getElementById("status").textContent="Your changes are saved automatically."; }catch(e){document.getElementById("status").textContent="Saving on this device is unavailable. Download your page to keep it.";}clearTimeout(timeout);timeout=setTimeout(preview,100);}
+var builder=document.getElementById("builder");
+var contact=document.getElementById("quick-contact");
+contact.addEventListener("input",function(){var value=contact.value.trim();document.getElementById("email").value=value.includes("@")?value:"";document.getElementById("phone").value=value.includes("@")?"":value;save();if(value&&!safeEmail(value)&&!safeTel(value))document.getElementById("status").textContent="Add a full email address or phone number to activate the contact button.";});
+builder.addEventListener("input",function(e){if(e.target!==contact){if(e.target.id==="email"||e.target.id==="phone"){contact.value=document.getElementById("email").value||document.getElementById("phone").value;}save();}});
+builder.addEventListener("change",function(e){if(e.target!==contact)save();});
 document.getElementById("download").addEventListener("click",function(){
 var d=get();var markup=page(d);var blob=new Blob([markup],{type:"text/html;charset=utf-8"});var url=URL.createObjectURL(blob);
 var a=document.createElement("a");a.href=url;a.download="my-business-website.html";document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(url);},1500);
-document.getElementById("status").textContent="Your website HTML file has been generated for download.";
+document.getElementById("status").textContent="Website downloaded! You can find it in your device downloads.";
 });
-document.getElementById("sample").addEventListener("click",function(){if(!confirm("Replace your edits with the example business? Download your current page first if you want to keep it."))return;set(defaults);save();});
+document.getElementById("sample").addEventListener("click",function(){if(!confirm("Try a sample business? This replaces what you typed. Download your page first if you want to keep it."))return;set(example);save();});
 function mode(m){var mobile=m==="mobile";document.getElementById("frame").classList.toggle("mobile",mobile);document.getElementById("mobile").setAttribute("aria-pressed",String(mobile));document.getElementById("desktop").setAttribute("aria-pressed",String(!mobile));}
 document.getElementById("mobile").addEventListener("click",function(){mode("mobile");});
 document.getElementById("desktop").addEventListener("click",function(){mode("desktop");});
