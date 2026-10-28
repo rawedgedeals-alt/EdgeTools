@@ -91,6 +91,10 @@
   document.addEventListener('click', e => {
     const filter = e.target.closest('[data-filter]');
     if (filter) event('directory_filter', { category: filter.dataset.filter });
+    // Count completed website exports without collecting business names, contact details or form inputs.
+    if (location.pathname.endsWith('/website-starter.html') && e.target.closest('#download')) {
+      event('website_export', { product: 'website_starter' });
+    }
     const link = e.target.closest('a[href]');
     if (!link) return;
     const url = new URL(link.href, location.href);
