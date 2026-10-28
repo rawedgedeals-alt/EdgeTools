@@ -169,3 +169,41 @@
 @media(max-width:960px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.product-roadmap{grid-template-columns:1fr}.product-card:nth-child(3){grid-column:span 2}}
 @media(max-width:640px){.product-grid{grid-template-columns:1fr}.product-card:nth-child(3){grid-column:auto}.whatif-home .whatif-products{padding-top:62px;padding-bottom:64px}.product-card{padding:24px}.product-mark{height:78px;font-size:77px}.product-roadmap{padding:20px}.product-roadmap h3{font-size:27px}.product-roadmap .roadmap-pills span{font-size:12px}}
 @media(prefers-reduced-motion:reduce){.product-card{transition:none;transform:none!important}}
+
+
+/* Mobile review after testing the protected WHATIF preview on an Android phone:
+   navigation gets a full-width second line, and purely decorative labels no
+   longer obscure the example website or a call to action. */
+@media(max-width:700px){
+  .whatif-home header{
+    display:flex;flex-direction:column;align-items:stretch;justify-content:center;
+    gap:9px;padding:14px 17px 10px;
+  }
+  .whatif-home header .brand{font-size:27px;line-height:1.1;align-self:flex-start}
+  .whatif-home header nav{
+    display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:0;width:100%;align-items:stretch;border-top:1px solid #8d93cd43;
+  }
+  .whatif-home header nav a{
+    display:flex;justify-content:center;min-width:0;padding:7px 1px;
+    min-height:43px;white-space:nowrap;font-size:clamp(9px,2.25vw,12px);
+    letter-spacing:0;line-height:1.25;
+  }
+  .whatif-hero .hero-proof{margin-bottom:25px;line-height:1.5;}
+  .whatif-hero .hero-visual{min-height:385px;margin-top:10px;padding:0 5px;}
+  .whatif-hero .float-chip{display:none;}
+  .whatif-hero .mock-window{width:100%;max-width:490px;overflow:hidden;}
+  .whatif-hero .mock-content{min-height:321px;padding:26px 24px 32px;}
+  .whatif-hero .mock-heading{font-size:clamp(35px,8.2vw,44px);}
+  .whatif-hero .mock-gem{width:140px;height:140px;right:-35px;bottom:-57px;opacity:.76;pointer-events:none;}
+  .whatif-hero .mock-button{position:relative;z-index:2;}
+  .whatif-hero .mock-url{font-size:9px;padding:4px 11px;}
+  .whatif-hero .mock-top{padding:12px 13px;}
+}
+@media(max-width:360px){
+  .whatif-home header nav a{font-size:9px;}
+  .whatif-home .whatif-hero h1{font-size:43px;}
+  .whatif-hero .mock-content{padding:23px 19px 31px;}
+  .whatif-hero .mock-heading{font-size:35px;}
+  .whatif-hero .mock-gem{width:112px;height:112px;bottom:-34px;right:-34px;}
+}
