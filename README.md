@@ -1,44 +1,60 @@
-# WHATIF — Software Discovery
+# WHATIF — Our Tools, Your Ideas
 
 Website: https://discoverwhatif.com/
 
-Static WHATIF directory. `tools.json` contains provider listings and category metadata. Once an affiliate account is approved, add its matching name and official HTTPS link to `affiliate-links.json` with `approved: true`; the directory will use that link with a visible affiliate disclosure. No unapproved tracking links are used.
+## Mission
 
-Sponsored campaigns are controlled in `ads.json` (slots: hero, mid, bottom). Activate only real campaigns. `ads.js` shows clearly marked advertising placeholders otherwise.
+**What if technology could be simple? Now IT is. With WHAT IF.**
+**For those of us who don't speak code.**
 
-The existing daily GitHub link monitor checks basic provider URL reachability, not pricing, commissions or performance.
+WHATIF is moving from a third-party software directory toward a first-party,
+accessible software platform. The priority is useful WHATIF-owned software and
+a consistent easy experience—not sending visitors to a grid of free vendor ads.
 
-## Search visibility
+## First-party tools built
 
-After updating `tools.json`, run `python3 scripts/render_directory.py` and commit
-`index.html` too. The delivered HTML includes every tool, so the directory works
-without JavaScript. `directory.js` adds filtering, sorting and approved affiliate
-links. If its live data request fails, the existing listings remain available.
+- `website-starter.html`: three-question website builder, instant preview,
+  downloadable standalone HTML website, three selectable cinematic designs.
+  **Does not publish/host websites**, accept payments, or provide customer accounts.
+- `software-stack-planner.html`: private browser-local subscription audit,
+  recurring cost estimates, category overlap hints and CSV export.
+- `software-cost-calculator.html`: basic subscription and first-year cost estimate.
+- `small-business-software-stack-checklist.html`: educational first-party guide.
 
-## Analytics activation
+The Edge Motion video studio exists as an offline prototype but is **not yet
+integrated into discoverwhatif.com**. The unified marketing workspace, site
+monitor, and account-based product platform are **planned, not available**.
 
-Set `measurementId` in `analytics-config.js` to the verified WHAT IF GA4 web
-stream ID. An empty ID disables tracking. Do not use a RawEdge property or ID.
-Analytics loads only on `discoverwhatif.com` and only after consent; previews,
-local development and visitors declining analytics do not send events.
+## External brands and advertising
 
-One GA4 `config` call sends the initial page view. Do not add a second Google
-tag, GTM page-view tag, or manual page-view call. In Enhanced Measurement,
-disable automatic outbound clicks, history-change page views and site-search collection: filters aren't
-pages and free-text directory searches should not be collected. Generic GA4
-outbound `click` events and `tool_click` are different metrics, not additive
-conversion totals. Leave Google Signals and advertising features disabled.
+The homepage does **not** display the 20 legacy vendor directory cards. Data
+in `tools.json` and `affiliate-links.json` remains for editorial research and
+past approved relationships; neither file powers an external-brand grid on the
+new homepage. `directory.js` is legacy code not loaded on the homepage.
+`scripts/render_directory.py` now validates the legacy inventory instead of
+modifying `index.html`.
 
-Custom events: `tool_click` (tool name, category, destination hostname, affiliate
-flag), `sponsor_click` (placement, destination hostname), `contact_click`
-(placement only), and `directory_filter` (category only). No free-text searches,
-email destinations, or outbound URL query strings are sent by these events.
-Use UTM campaign links without personal information to distinguish traffic
-sources. GA4 users represent measured browsers/devices, not a count of people.
+Independent educational comparisons may name products when relevant. They do
+not imply paid affiliation or endorsements. Outside companies must arrange
+paid, clearly labeled promotional placement to get an ad feature.
+`ads.json` contains three optional advertising slots, all inactive by default.
+`ads.js` renders only active sponsor campaigns and uses
+`rel="sponsored noopener noreferrer"` for advertiser links. **No empty ad
+billboards appear**.
 
-Before production approval, verify the WHAT IF property, ID, report timezone,
-web stream URL, and Search Console association. After an approved deployment,
-accept analytics in a fresh visit and verify one `page_view` and one
-`tool_click` in Realtime/DebugView; check decline and preferences withdrawal.
-Data starts after activation and can't reconstruct earlier visits. Consent and
-browser blocking mean analytics is not a complete visitor census.
+The `advertise.html` page proposes sponsor packages but does not process
+payments. No sponsor is active or implied by having a prospect entry.
+
+## Search / privacy / analytics
+
+The main SEO content stays accessible through independent guides. `sitemap.xml`
+lists the first-party tool pages and editorial articles. Analytics runs via
+`analytics-config.js` + `analytics.js` only after explicit consent on the
+production domain. Analytics is not a complete visitor census.
+
+## Release process
+
+This redesign is on a feature branch until reviewed and merged. Test the
+responsive homepage, interactive builder, downloaded files, sponsor gating
+and consent behavior on a Vercel preview before publishing to production.
+Do not change DNS or RawEdge while working on WHATIF.

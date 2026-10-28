@@ -46,7 +46,7 @@
   const box = document.createElement('section');
   box.className = 'analytics-choice';
   box.setAttribute('aria-label', 'Analytics preferences');
-  box.innerHTML = '<p>Allow optional analytics to help improve WHATIF? Google Analytics measures visits and link clicks. The directory works either way. <a href="/privacy.html">Privacy details</a></p><button type="button" data-choice="denied">Decline analytics</button><button type="button" data-choice="granted">Allow analytics</button><button type="button" data-close hidden>Close</button>';
+  box.innerHTML = '<p>Allow optional analytics to help improve WHATIF? Google Analytics measures visits and link clicks. The tools and guides work either way. <a href="/privacy.html">Privacy details</a></p><button type="button" data-choice="denied">Decline analytics</button><button type="button" data-choice="granted">Allow analytics</button><button type="button" data-close hidden>Close</button>';
   const close = box.querySelector('[data-close]');
   box.hidden = consent === 'granted' || consent === 'denied';
   function eraseCookies() {
@@ -91,6 +91,10 @@
   document.addEventListener('click', e => {
     const filter = e.target.closest('[data-filter]');
     if (filter) event('directory_filter', { category: filter.dataset.filter });
+    // Count completed website exports without collecting business names, contact details or form inputs.
+    if (location.pathname.endsWith('/website-starter.html') && e.target.closest('#download')) {
+      event('website_export', { product: 'website_starter' });
+    }
     const link = e.target.closest('a[href]');
     if (!link) return;
     const url = new URL(link.href, location.href);

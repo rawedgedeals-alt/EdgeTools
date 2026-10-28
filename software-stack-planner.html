@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Software Stack Planner & Subscription Audit | WHATIF</title>
+<meta name="description" content="Build your small-business software stack, calculate monthly and annual costs, spot possible overlapping tools, and export a free software audit worksheet. No signup needed.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://discoverwhatif.com/software-stack-planner.html">
+<meta name="theme-color" content="#070b12">
+<meta property="og:type" content="website"><meta property="og:site_name" content="WHATIF">
+<meta property="og:title" content="Free Software Stack Planner | WHATIF">
+<meta property="og:description" content="Plan your software subscriptions, compare costs, and export your own audit.">
+<meta property="og:url" content="https://discoverwhatif.com/software-stack-planner.html">
+<meta name="twitter:card" content="summary">
+<script src="./analytics-config.js" defer></script><script src="./analytics.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"WHATIF Software Stack Planner","url":"https://discoverwhatif.com/software-stack-planner.html","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"WHATIF"}}</script>
+<style>
+:root{color-scheme:dark;--bg:#070b12;--panel:#101b2c;--line:#29485b;--green:#26f3a0;--cyan:#44d9ff;--purple:#b58dff;--muted:#aec1d0;--text:#f5f8fe}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse 700px 500px at 85% 0%,#203b6677,transparent 72%),radial-gradient(ellipse 620px 600px at 0% 40%,#06402f6a,transparent 70%),var(--bg);font:16px/1.55 system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--text)}
+a{color:#80f8c6}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
+header{padding:18px clamp(16px,4vw,52px);border-bottom:1px solid #ffffff28;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;background:#080e1ad4}
+.logo{font-size:26px;font-weight:950;letter-spacing:-.07em;color:#fff;text-decoration:none}.logo span{color:var(--green)}header nav{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;font-weight:800}header nav a{text-decoration:none;color:#d7f9ed}
+main{max-width:1330px;margin:auto;padding:0 clamp(16px,4vw,48px) 80px}
+.hero{padding:62px 0 30px}.eyebrow{color:var(--green);font-size:11px;font-weight:900;letter-spacing:.18em;text-transform:uppercase}
+h1{font-size:clamp(39px,5.5vw,72px);letter-spacing:-.06em;line-height:1.07;max-width:900px;margin:14px 0 19px}
+h1 span{background:linear-gradient(90deg,var(--green),var(--cyan),var(--purple));color:transparent;background-clip:text}
+.hero p{color:#c4d5e2;font-size:18px;max-width:780px;margin:0 0 18px}
+.pills{display:flex;gap:8px;flex-wrap:wrap}.pill{display:inline-block;border:1px solid #28d79b66;background:#11312b;color:#b7f9d7;border-radius:99px;padding:7px 11px;font-size:12px;font-weight:800}
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:27px 0}
+.metric{border:1px solid #ffffff26;border-radius:18px;padding:20px;background:linear-gradient(145deg,#14263b,#0d1928);min-width:0}
+.metric .label{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:#b7c7da;font-weight:850}
+.metric strong{display:block;font-size:clamp(23px,3vw,39px);font-weight:900;letter-spacing:-.04em;margin:7px 0 0;overflow-wrap:anywhere}
+.metric:first-child strong{color:var(--green)}.metric:nth-child(3) strong{color:var(--cyan)}
+.work{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:18px;align-items:start}
+.panel{border:1px solid #ffffff25;background:#111c2cd9;border-radius:20px;padding:20px;box-shadow:0 14px 44px #0004}
+.panel h2{margin:0;font-size:23px;letter-spacing:-.025em}.muted{color:var(--muted);font-size:14px;margin:7px 0 12px}
+.toolbar{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;margin:20px 0}
+button{font:inherit;cursor:pointer}.btn{border:1px solid #27e4a0;border-radius:10px;padding:10px 15px;background:#112b27;color:#bffff0;font-weight:900}
+.btn.primary{background:var(--green);color:#031910}.btn.secondary{border-color:#647c92;color:#e0f0ff;background:#18283b}
+.btn.danger{border-color:#855966;color:#ffd6e2;background:#301e2a}
+.actions{display:flex;flex-wrap:wrap;gap:8px}.btn:hover{filter:brightness(1.14)}
+.table-wrap{overflow-x:auto;border-radius:13px;border:1px solid #36516a}
+table{width:100%;border-collapse:collapse;min-width:1020px}thead{background:#18332f}th{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:#bcfae4;text-align:left;padding:12px}td{background:#122035;border-top:1px solid #355065;padding:10px;vertical-align:middle}
+td input,td select{background:#0b1829;color:#eafbff;border:1px solid #526b83;border-radius:9px;padding:10px 9px;width:100%;font-size:13px}
+td input::placeholder{color:#7d99ac}.col-name{min-width:166px}.col-cat{min-width:137px}.col-money{min-width:95px}.col-seats{min-width:76px}.col-plan{min-width:115px}.col-status{min-width:118px}
+.del{background:#281824;color:#ffb9cc;border:1px solid #8e526b;border-radius:8px;padding:8px 10px;font-size:12px}
+.side .panel{margin-bottom:14px}.side h3{margin:0 0 10px;font-size:16px}.side p,.side li{color:#c6d5e0;font-size:13px}
+.notice{border-left:3px solid var(--cyan);padding:10px 14px;background:#142c38;border-radius:5px;margin:10px 0}
+#overlap-list{padding-left:19px;margin:8px 0}.empty{color:#a8bbcb;font-size:14px}
+footer{padding:22px 5%;border-top:1px solid #ffffff25;text-align:center;color:#9fb2c2;font-size:12px}
+.small{font-size:12px;color:#9db5c6}.status{min-height:20px;color:#9bf6d5;font-size:13px}
+.callout{padding:21px 24px;border:1px solid #2bdc9b66;border-radius:16px;background:#0c3028bb;margin-top:23px}
+.callout h2{margin:0 0 6px;font-size:19px}.callout p{margin:0;color:#c7e6dc;font-size:14px}
+@media(max-width:990px){.work{grid-template-columns:1fr}.side{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.side .panel{margin-bottom:0}}
+@media(max-width:700px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding-top:44px}.panel{padding:15px}.side{grid-template-columns:1fr}header nav{gap:10px}h1{font-size:40px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><a class="logo" href="./">WHAT<span>IF?</span></a><nav aria-label="Main"><a href="./#tools">DIRECTORY</a><a href="./#guides">GUIDES</a><a href="./software-cost-calculator.html">COST CALCULATOR</a></nav></header>
+<main>
+<section class="hero">
+<div class="eyebrow">WHATIF LAB / FREE BUSINESS TOOL</div>
+<h1>Stop paying for tools <span>you don't need.</span></h1>
+<p>Build a simple inventory of your software, estimate what it really costs, and flag subscriptions worth reviewing. No account, no sales pitch, no uploads.</p>
+<div class="pills"><span class="pill">✓ PRIVATE TO YOUR DEVICE</span><span class="pill">✓ FREE TO USE</span><span class="pill">✓ EXPORT CSV</span><span class="pill">✓ WORKS ON MOBILE</span></div>
+</section>
+<section aria-labelledby="summary-title">
+<h2 id="summary-title" class="eyebrow">YOUR LIVE COST SNAPSHOT</h2>
+<div class="metrics">
+<div class="metric"><div class="label">Monthly equivalent</div><strong id="monthly" aria-live="polite">$0</strong></div>
+<div class="metric"><div class="label">Annual recurring</div><strong id="annual" aria-live="polite">$0</strong></div>
+<div class="metric"><div class="label">Marked for cancellation</div><strong id="savings" aria-live="polite">$0</strong><div class="small">Potential yearly reduction, not guaranteed</div></div>
+<div class="metric"><div class="label">Software counted</div><strong id="count" aria-live="polite">0</strong></div>
+</div>
+</section>
+<div class="work">
+<section class="panel" aria-labelledby="planner-title">
+<h2 id="planner-title">Your software lineup</h2>
+<p class="muted">List the tools you're already paying for. Enter the price <strong>per seat</strong>, then choose whether that price is monthly or yearly. Leave seat count at 1 for flat-fee subscriptions.</p>
+<div class="toolbar"><div class="actions"><button class="btn primary" id="add" type="button">+ Add software</button><button class="btn secondary" id="sample" type="button">Load sample</button></div><div class="actions"><button class="btn secondary" id="export" type="button">Export CSV</button><button class="btn danger" id="clear" type="button">Clear all</button></div></div>
+<div class="table-wrap"><table><thead><tr><th class="col-name" scope="col">Software name</th><th class="col-cat" scope="col">Category</th><th class="col-money" scope="col">Cost / seat</th><th class="col-plan" scope="col">Billing</th><th class="col-seats" scope="col">Seats</th><th class="col-money" scope="col">Setup fee</th><th class="col-status" scope="col">Decision</th><th scope="col">Remove</th></tr></thead><tbody id="entries"></tbody></table></div>
+<p id="save-status" class="status" role="status"></p>
+<p class="small">Data stays in your browser's local storage on this device. Clearing browser data can remove it. Export a CSV to keep a backup. Do not enter passwords, customer data or payment account details.</p>
+</section>
+<aside class="side" aria-label="Helpful guidance">
+<section class="panel"><h3>Potential overlap</h3><p>More than one paid product in the same broad category can be worth reviewing. Categories alone don't prove two tools are duplicates.</p><ul id="overlap-list"><li class="empty">Add tools to see overlap hints.</li></ul></section>
+<section class="panel"><h3>Make a decision</h3><p><strong>Keep:</strong> clearly supports important work.</p><p><strong>Review:</strong> check its actual value and renewal terms.</p><p><strong>Cancel:</strong> identify a possible saving, but first export needed data and confirm your contract.</p><div class="notice">Annual figures are estimates based on entered prices. Taxes, usage charges, promotions and future price changes aren't included.</div></section>
+<section class="panel"><h3>Go deeper</h3><p>Use the free <a href="./small-business-software-stack-checklist.html">30-minute software audit checklist</a> to review workflows, security and overlapping subscriptions.</p><p>Or compare providers in the <a href="./#tools">WHATIF directory</a>.</p></section>
+</aside>
+</div>
+<div class="callout"><h2>Not sure what you need yet?</h2><p>Start with the task you're trying to solve. Explore our <a href="./zapier-vs-make.html">automation comparison</a>, <a href="./shopify-vs-wix.html">website platform guide</a>, and <a href="./chatgpt-vs-claude.html">AI assistant comparison</a>. We don't invent ratings or guarantee savings.</p></div>
+</main>
+<footer>© 2026 WHATIF · <a href="./privacy.html">Privacy & disclosures</a> · <a href="./">Home</a></footer>
+<script>
+(function(){
+"use strict";
+var KEY="whatif_software_stack_planner_v1";
+var categories=["AI assistants","Automation","Design & content","Email & marketing","Accounting & payments","CRM & sales","Website & commerce","Storage & collaboration","Scheduling","Security","Other"];
+var statuses=["Keep","Review","Cancel"];
+var items=[];
+var tbody=document.getElementById("entries");
+var status=document.getElementById("save-status");
+function money(value){return new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",maximumFractionDigits:0}).format(value);}
+function cleanNum(v){v=Number(v);return Number.isFinite(v)?Math.max(0,Math.min(100000000,v)):0;}
+function cleanText(s){return String(s||"").slice(0,120);}
+function emptyRow(){return {name:"",category:"Other",price:0,billing:"monthly",seats:1,setup:0,decision:"Review"};}
+function normalized(r){return {name:cleanText(r.name),category:categories.includes(r.category)?r.category:"Other",price:cleanNum(r.price),billing:r.billing==="yearly"?"yearly":"monthly",seats:Math.max(1,Math.min(100000,Math.floor(cleanNum(r.seats))||1)),setup:cleanNum(r.setup),decision:statuses.includes(r.decision)?r.decision:"Review"};}
+function mCost(r){return r.price*r.seats/(r.billing==="yearly"?12:1);}
+function optionSelect(values,value){var el=document.createElement("select");values.forEach(function(v){var op=document.createElement("option");op.value=v;op.textContent=v;el.appendChild(op);});el.value=value;return el;}
+function cell(row,control){var td=document.createElement("td");td.appendChild(control);row.appendChild(td);}
+function render(){
+tbody.replaceChildren();
+items.forEach(function(r,idx){
+var tr=document.createElement("tr");
+var name=document.createElement("input");name.type="text";name.placeholder="e.g. scheduling tool";name.maxLength=120;name.value=r.name;name.setAttribute("aria-label","Software name, row "+(idx+1));name.addEventListener("input",function(){r.name=cleanText(name.value);save();calculate();});cell(tr,name);
+var cat=optionSelect(categories,r.category);cat.setAttribute("aria-label","Software category, row "+(idx+1));cat.addEventListener("change",function(){r.category=cat.value;save();calculate();});cell(tr,cat);
+function num(field,min){var el=document.createElement("input");el.type="number";el.min=String(min);el.max="100000000";el.step=field==="seats"?"1":"0.01";el.value=String(r[field]);el.setAttribute("aria-label",field+" row "+(idx+1));el.addEventListener("input",function(){r[field]=field==="seats"?Math.max(1,Math.floor(cleanNum(el.value))||1):cleanNum(el.value);save();calculate();});return el;}
+cell(tr,num("price",0));
+var billing=optionSelect(["monthly","yearly"],r.billing);billing.setAttribute("aria-label","Billing interval, row "+(idx+1));billing.addEventListener("change",function(){r.billing=billing.value;save();calculate();});cell(tr,billing);
+cell(tr,num("seats",1));cell(tr,num("setup",0));
+var decision=optionSelect(statuses,r.decision);decision.setAttribute("aria-label","Decision, row "+(idx+1));decision.addEventListener("change",function(){r.decision=decision.value;save();calculate();});cell(tr,decision);
+var remove=document.createElement("button");remove.className="del";remove.type="button";remove.textContent="Remove";remove.setAttribute("aria-label","Remove software, row "+(idx+1));remove.addEventListener("click",function(){items.splice(idx,1);save();render();});cell(tr,remove);
+tbody.appendChild(tr);
+});
+calculate();
+}
+function calculate(){
+var active=items.filter(function(r){return r.name.trim()!=="";});
+var total=active.reduce(function(sum,r){return sum+mCost(r);},0);
+var potential=active.filter(function(r){return r.decision==="Cancel";}).reduce(function(sum,r){return sum+mCost(r)*12;},0);
+document.getElementById("monthly").textContent=money(total);
+document.getElementById("annual").textContent=money(total*12);
+document.getElementById("savings").textContent=money(potential);
+document.getElementById("count").textContent=String(active.length);
+var group={};active.filter(function(r){return r.price>0&&r.decision!=="Cancel"&&r.category!=="Other";}).forEach(function(r){(group[r.category]||(group[r.category]=[])).push(r.name);});
+var list=document.getElementById("overlap-list");list.replaceChildren();
+var doubled=Object.keys(group).filter(function(k){return group[k].length>1;});
+if(!doubled.length){var li=document.createElement("li");li.className="empty";li.textContent="No category overlap hints yet.";list.appendChild(li);}
+else doubled.forEach(function(k){var li=document.createElement("li");li.textContent=k+": "+group[k].join(", ");list.appendChild(li);});
+}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(items));status.textContent="Saved on this device.";}catch(e){status.textContent="Local saving unavailable. Export CSV for a backup.";}}
+function csvCell(v){return '"'+String(v).replace(/"/g,'""').replace(/^[=+@\-\t\r]/,"'$&")+'"';}
+function exportCsv(){
+var lines=[["Software","Category","Cost per seat","Billing interval","Seats","Setup fee","Decision","Monthly equivalent","Annual recurring","First year including setup"].map(csvCell).join(",")];
+items.filter(function(r){return r.name.trim();}).forEach(function(r){lines.push([r.name,r.category,r.price,r.billing,r.seats,r.setup,r.decision,mCost(r).toFixed(2),(mCost(r)*12).toFixed(2),(mCost(r)*12+r.setup).toFixed(2)].map(csvCell).join(","));});
+var blob=new Blob(["\ufeff"+lines.join("\r\n")],{type:"text/csv;charset=utf-8;"});
+var href=URL.createObjectURL(blob);var a=document.createElement("a");a.href=href;a.download="WHATIF-software-stack-audit.csv";document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(href);},1000);status.textContent="CSV exported.";
+}
+document.getElementById("add").addEventListener("click",function(){items.push(emptyRow());save();render();var names=tbody.querySelectorAll('input[type="text"]');if(names.length)names[names.length-1].focus();});
+document.getElementById("sample").addEventListener("click",function(){if(items.some(function(r){return r.name.trim();})&&!confirm("Replace your existing planner rows with sample data? Export CSV first if you want a backup."))return;items=[{name:"Sample CRM",category:"CRM & sales",price:25,billing:"monthly",seats:2,setup:0,decision:"Keep"},{name:"Sample email tool",category:"Email & marketing",price:20,billing:"monthly",seats:1,setup:0,decision:"Review"},{name:"Sample marketing suite",category:"Email & marketing",price:180,billing:"yearly",seats:1,setup:0,decision:"Cancel"}].map(normalized);save();render();status.textContent="Sample values loaded — replace them with your real expenses.";});
+document.getElementById("export").addEventListener("click",exportCsv);
+document.getElementById("clear").addEventListener("click",function(){if(!confirm("Clear the planner data stored on this device? Export CSV first if needed."))return;items=[emptyRow()];save();render();status.textContent="Planner reset.";});
+try{var saved=JSON.parse(localStorage.getItem(KEY)||"null");if(Array.isArray(saved)){items=saved.slice(0,100).filter(function(r){return r&&typeof r==="object";}).map(normalized);}}catch(e){}
+if(!items.length)items=[emptyRow()];
+render();
+})();
+</script>
+</body></html>
