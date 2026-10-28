@@ -207,3 +207,60 @@
   .whatif-hero .mock-heading{font-size:35px;}
   .whatif-hero .mock-gem{width:112px;height:112px;bottom:-34px;right:-34px;}
 }
+
+
+/* Independent side-by-side research stays prominent without sending
+   visitors off-site from the homepage or selling editorial placements. */
+.whatif-home .whatif-comparisons {
+  position:relative;isolation:isolate;
+  padding-top:86px;padding-bottom:92px;
+  background:radial-gradient(ellipse 800px 630px at 96% 0%,#3c2a8370,transparent 68%),
+    radial-gradient(ellipse 700px 580px at 0% 95%,#0a52735d,transparent 69%),#090d20;
+  border-top:1px solid #88a9f040;border-bottom:1px solid #9a91da3b;
+}
+.whatif-comparisons:before {
+  content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;
+  background-image:linear-gradient(#9ae0ff08 1px,transparent 1px),linear-gradient(90deg,#9ae0ff08 1px,transparent 1px);
+  background-size:55px 55px;
+}
+.compare-head {max-width:840px;margin-bottom:31px;}
+.compare-kicker {display:inline-flex;align-items:center;gap:10px;color:#8ce9ff;font-size:11px;font-weight:950;letter-spacing:.16em;}
+.compare-kicker-dot {display:inline-block;flex:none;width:9px;height:9px;border-radius:50%;background:#75e5ff;box-shadow:0 0 0 5px #75e5ff1b,0 0 20px #75e5ff9c;}
+.whatif-home .compare-head h2 {font-size:clamp(39px,5.5vw,74px);line-height:1.04;letter-spacing:-.058em;margin:16px 0;}
+.compare-head h2 span {background:linear-gradient(105deg,#6fe4ff,#b0a0ff,#ff81d5);background-clip:text;-webkit-background-clip:text;color:transparent;}
+.compare-head p {color:#cad1e9;font-size:clamp(16px,1.4vw,19px);line-height:1.68;max-width:790px;margin:0;}
+.compare-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;}
+.compare-card {display:flex;flex-direction:column;min-width:0;min-height:265px;
+  border-radius:19px;padding:24px 23px 22px;
+  background:linear-gradient(143deg,#17223f,#11172f 71%,#21152f);
+  border:1px solid #758ec07b;box-shadow:0 16px 40px #0307196b;
+  transition:border-color .2s,transform .2s,box-shadow .2s;}
+.compare-card:hover {border-color:#78dfff;transform:translateY(-4px);box-shadow:0 19px 51px #3c5dc63e;}
+.compare-top {display:flex;align-items:center;justify-content:space-between;gap:12px;}
+.compare-topic {font-size:10px;font-weight:950;letter-spacing:.14em;color:#81e6ff;}
+.compare-symbol {font-size:25px;font-weight:950;color:#c5a5ff;line-height:1;filter:drop-shadow(0 2px 15px #ab85ff89);}
+.compare-card h3 {font-size:clamp(23px,2.2vw,31px);font-weight:1000;line-height:1.17;letter-spacing:-.04em;color:#f8f8ff;margin:25px 0 12px;}
+.compare-card h3 span {font-size:.67em;font-weight:850;letter-spacing:0;color:#b79aff;text-transform:uppercase;}
+.compare-card p {color:#b5c7e0;font-size:14px;line-height:1.62;margin:0 0 24px;flex:1;}
+.compare-card a {align-self:flex-start;display:inline-flex;align-items:center;gap:14px;
+  color:#b0f2ff;font-size:12px;font-weight:950;letter-spacing:.04em;
+  text-decoration:none;border-bottom:1px solid #81ddff8a;padding-bottom:6px;min-height:35px;}
+.compare-card a:hover {color:white;border-color:#fff;}
+.compare-card a span {font-size:18px;}
+.compare-owned {background:radial-gradient(ellipse at 90% 13%,#935cff5c,transparent 58%),linear-gradient(145deg,#211a45,#14203b);border-color:#b08bffba;}
+.compare-owned .compare-topic {color:#e2b5ff;}
+.compare-owned a {color:#eac4ff;border-color:#bd95ff;}
+.compare-disclosure {margin:24px 0 0;padding:17px 21px;border:1px solid #7d93bb69;border-radius:12px;background:#101931cf;color:#b1bfd9;font-size:13px;line-height:1.7;}
+.compare-disclosure strong {color:#f5f5ff;}
+@media(max-width:950px){.compare-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:620px){
+  .whatif-home .whatif-comparisons{padding:57px 18px 65px;}
+  .compare-kicker{font-size:9px;letter-spacing:.13em;line-height:1.5;}
+  .whatif-home .compare-head h2{font-size:clamp(38px,9.5vw,55px);}
+  .compare-grid{grid-template-columns:1fr;gap:12px;}
+  .compare-card{min-height:0;padding:21px;}
+  .compare-card h3{margin:17px 0 10px;font-size:27px;}
+  .compare-card p{margin-bottom:18px;}
+  .compare-disclosure{padding:14px 16px;}
+}
+@media(prefers-reduced-motion:reduce){.compare-card{transition:none;transform:none!important;}}
