@@ -46,7 +46,7 @@
   const box = document.createElement('section');
   box.className = 'analytics-choice';
   box.setAttribute('aria-label', 'Analytics preferences');
-  box.innerHTML = '<p>Allow optional analytics to help improve WHATIF? Google Analytics measures visits and link clicks. The directory works either way. <a href="/privacy.html">Privacy details</a></p><button type="button" data-choice="denied">Decline analytics</button><button type="button" data-choice="granted">Allow analytics</button><button type="button" data-close hidden>Close</button>';
+  box.innerHTML = '<p>Allow optional analytics to help improve WHATIF? Google Analytics measures visits and link clicks. The tools and guides work either way. <a href="/privacy.html">Privacy details</a></p><button type="button" data-choice="denied">Decline analytics</button><button type="button" data-choice="granted">Allow analytics</button><button type="button" data-close hidden>Close</button>';
   const close = box.querySelector('[data-close]');
   box.hidden = consent === 'granted' || consent === 'denied';
   function eraseCookies() {
