@@ -134,3 +134,38 @@
 @media(max-width:900px){.whatif-home .whatif-hero{grid-template-columns:1fr;padding-top:70px;gap:0}.whatif-hero .hero-visual{min-height:490px}.whatif-home .whatif-hero h1{max-width:720px}.showroom-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.whatif-how .steps{grid-template-columns:1fr}}
 @media(max-width:620px){.whatif-home .whatif-hero{padding:49px 17px 38px;min-height:0}.whatif-home .whatif-hero h1{font-size:clamp(43px,11vw,65px);margin-top:22px}.whatif-hero .eyebrow{font-size:10px;padding:10px 12px}.whatif-hero .hero-visual{min-height:365px;padding:0 8px}.whatif-hero .mock-window{transform:none;animation:none}.whatif-hero .mock-content{padding:27px;min-height:300px}.whatif-hero .mock-heading{font-size:43px}.whatif-hero .mock-gem{width:170px;height:170px;right:-25px;bottom:-60px}.whatif-hero .float-chip.one{top:14px;right:0}.whatif-hero .float-chip.two{bottom:2px;left:0}.whatif-home .section{padding:52px 18px}.showroom-grid{grid-template-columns:1fr}.showroom-art{min-height:220px}.showroom-art .mini-head{font-size:39px}.whatif-home header{gap:5px}.whatif-home header nav{gap:3px 8px}.whatif-home header nav a{font-size:12px;padding:9px 3px}.builder-app .theme-swatches{grid-template-columns:repeat(3,minmax(0,1fr))}.builder-app .theme-swatch{font-size:11px;padding:7px}.whatif-how{padding:23px 18px 54px}}
 @media(prefers-reduced-motion:reduce){.whatif-hero .mock-window,.whatif-hero .glow-disc,.whatif-hero .float-chip {animation:none}.whatif-home .showroom-card,.builder-app .theme-swatch{transition:none}.whatif-home html{scroll-behavior:auto}}
+
+
+/* FIRST PARTY SOFTWARE: the store shelves now carry WHATIF products. */
+.whatif-home .whatif-products {position:relative;isolation:isolate;padding-top:85px;padding-bottom:95px;background:radial-gradient(ellipse 820px 500px at 90% 12%,#663cde52,transparent 70%),radial-gradient(ellipse 620px 550px at 0% 95%,#155fa25c,transparent 65%),#090b1d;border-top:1px solid #6d7bd64a;border-bottom:1px solid #6d7bd64a;}
+.whatif-products:before {content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(#a6b2ff08 1px,transparent 1px),linear-gradient(90deg,#a6b2ff08 1px,transparent 1px);background-size:56px 56px;}
+.products-heading{max-width:840px;margin:0 0 34px;}
+.whatif-home .products-heading h2 {font-size:clamp(39px,5vw,69px);line-height:1.07;letter-spacing:-.058em;margin:13px 0 18px;}
+.products-heading h2 span {background:linear-gradient(100deg,#6de3ff,#c28aff,#ff81cb);background-clip:text;-webkit-background-clip:text;color:transparent;}
+.products-heading p {font-size:clamp(16px,1.5vw,19px);line-height:1.65;color:#c2cbe5;margin:0;}
+.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px;align-items:stretch;}
+.product-card{position:relative;isolation:isolate;display:flex;flex-direction:column;min-width:0;overflow:hidden;border:1px solid #9ca1ff58;background:linear-gradient(140deg,#1c1a3c,#131c3a 75%,#151030);border-radius:22px;padding:29px 26px 26px;box-shadow:0 20px 54px #03051573;transition:transform .2s,border-color .2s,box-shadow .2s;}
+.product-card:before {content:"";position:absolute;z-index:-1;width:270px;height:270px;right:-128px;top:-92px;border-radius:50%;filter:blur(35px);background:#9259ff5e;}
+.product-card:nth-child(2):before {background:#36caff5c;}
+.product-card:nth-child(3):before {background:#e89d5a53;}
+.product-card:hover{transform:translateY(-5px);border-color:#7ae8ff;box-shadow:0 28px 66px #4453dc48;}
+.product-card.first{border-color:#c18dffb0;background:linear-gradient(130deg,#291f54,#151f3f 75%,#19102e);}
+.product-number {font-size:11px;font-weight:950;letter-spacing:.18em;color:#8ee7ff;}
+.product-mark{height:102px;display:flex;align-items:center;justify-content:flex-start;font-size:93px;line-height:1;filter:drop-shadow(0 5px 28px #aa85ffcc);color:#b898ff;margin:6px 0 2px;}
+.product-card:nth-child(2) .product-mark{color:#6bdbff;filter:drop-shadow(0 5px 26px #6fdbffbb);}
+.product-card:nth-child(3) .product-mark{color:#ffc183;filter:drop-shadow(0 5px 26px #ffd2879e);}
+.product-card h3{font-size:clamp(24px,2.25vw,31px);line-height:1.16;letter-spacing:-.04em;margin:9px 0 12px;color:#fff;}
+.product-card p {font-size:15px;color:#bccbe4;line-height:1.6;margin:0 0 20px;flex:1;}
+.product-tags{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 21px;}
+.product-tags span{font-size:10px;font-weight:800;color:#c9d5ff;letter-spacing:.02em;border:1px solid #847db377;background:#22203c;border-radius:99px;padding:7px 9px;}
+.product-cta{display:flex;align-items:center;justify-content:center;min-height:52px;border:1px solid #baa6ff8c;border-radius:11px;background:linear-gradient(100deg,#343670,#42214f);color:#f7eaff;text-decoration:none;font-weight:950;font-size:13px;letter-spacing:.025em;text-align:center;}
+.product-card.first .product-cta{color:#100e22;border-color:#b9e1ff;background:linear-gradient(110deg,#75dcff,#ae9bff,#f896d2);}
+.product-cta:hover{background:#a78cfa;color:#100e22;}
+.product-roadmap{display:grid;grid-template-columns:1.2fr 1fr;gap:22px;padding:27px 30px;margin-top:28px;background:linear-gradient(110deg,#161a3a,#14243d);border:1px solid #6582b178;border-radius:18px;}
+.product-roadmap h3{margin:6px 0 12px;font-size:clamp(23px,2.7vw,35px);line-height:1.2;letter-spacing:-.035em;}
+.product-roadmap p{font-size:14px;color:#b9c7dd;line-height:1.6;margin:0;max-width:600px;}
+.roadmap-pills{display:flex;flex-wrap:wrap;gap:9px;align-content:center;}
+.roadmap-pills span{padding:11px 14px;color:#d5e0ff;background:#25284f;border:1px solid #8b84ca6c;border-radius:11px;font-size:13px;font-weight:800;}
+@media(max-width:960px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.product-roadmap{grid-template-columns:1fr}.product-card:nth-child(3){grid-column:span 2}}
+@media(max-width:640px){.product-grid{grid-template-columns:1fr}.product-card:nth-child(3){grid-column:auto}.whatif-home .whatif-products{padding-top:62px;padding-bottom:64px}.product-card{padding:24px}.product-mark{height:78px;font-size:77px}.product-roadmap{padding:20px}.product-roadmap h3{font-size:27px}.product-roadmap .roadmap-pills span{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.product-card{transition:none;transform:none!important}}
