@@ -6,7 +6,7 @@
 <meta name="description" content="Make a simple business website in three steps: business name, what you do and contact details. Preview as you type, then download your page. Free and no signup.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://discoverwhatif.com/website-starter.html">
-<meta name="theme-color" content="#070b12">
+<meta name="theme-color" content="#0c0a24">
 <meta property="og:type" content="website"><meta property="og:site_name" content="WHATIF">
 <meta property="og:title" content="WHATIF Website Starter — Make your first website free">
 <meta property="og:description" content="Create, preview and export a one-page small business website without signing up.">
@@ -14,6 +14,7 @@
 <meta name="twitter:card" content="summary">
 <script src="./analytics-config.js" defer></script><script src="./analytics.js" defer></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"WHATIF Website Starter","url":"https://discoverwhatif.com/website-starter.html","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"WHATIF"}}</script>
+<link rel="stylesheet" href="./whatif-experience.css">
 <style>
 :root{color-scheme:dark;--mint:#2affb0;--light:#f5faff;--sub:#b1c7d9;--line:#284558;--night:#070c15}
 *{box-sizing:border-box}
@@ -58,14 +59,14 @@ footer{padding:21px 5%;border-top:1px solid #ffffff25;color:#a0b4c3;text-align:c
 @media(max-width:600px){h1{font-size:43px}.hero{padding-top:42px}.panel{padding:15px}iframe{height:580px}.preview-actions button{padding:8px}.two{grid-template-columns:1fr}}
 </style>
 </head>
-<body>
+<body class="builder-app">
 <header><a class="logo" href="./">WHAT<span>IF?</span></a><nav aria-label="Main"><a href="./">DIRECTORY</a><a href="./software-stack-planner.html">SOFTWARE PLANNER</a><a href="./#guides">GUIDES</a></nav></header>
 <main>
 <section class="hero">
 <div class="eyebrow">FOR THOSE OF US WHO DON’T SPEAK CODE.</div>
 <h1>Your idea. Your website. <em>No code needed.</em></h1>
 <p>Just type your business name, what you do, and how customers reach you. You'll see your page take shape immediately. No experience needed, and no account to create.</p>
-<div class="pills"><span>JUST 3 QUESTIONS</span><span>AUTOMATIC SAVING</span><span>LARGE, CLEAR CONTROLS</span><span>FREE DOWNLOAD</span></div>
+<div class="pills"><span>3 QUESTIONS</span><span>READY-TO-USE DESIGNS</span><span>LIVE PREVIEW</span><span>FREE WEBSITE FILE</span></div>
 </section>
 <div class="studio">
 <section class="panel" aria-label="Easy website builder">
@@ -81,6 +82,7 @@ footer{padding:21px 5%;border-top:1px solid #ffffff25;color:#a0b4c3;text-align:c
 <input id="quick-contact" maxlength="140" autocomplete="off" inputmode="text" placeholder="Email address or phone number" aria-describedby="contact-hint">
 <p id="contact-hint" class="help">A phone number or email is fine. You can leave this blank for now.</p>
 </div>
+<div role="group" aria-label="Choose your website design"><label class="question" style="margin-top:22px">Choose a look (optional)</label><p class="swatch-note">Your site already looks great. Tap a color if you want a different feel.</p><div class="theme-swatches"><button type="button" class="theme-swatch" data-design="violet" aria-pressed="true"><div class="swatch-art violet"></div>Ultra Violet</button><button type="button" class="theme-swatch" data-design="blue" aria-pressed="false"><div class="swatch-art blue"></div>Hyperwave Blue</button><button type="button" class="theme-swatch" data-design="amber" aria-pressed="false"><div class="swatch-art amber"></div>Afterburn Gold</button></div></div>
 <div class="controls">
 <button type="button" class="btn btn-primary" id="download">Download my website</button>
 </div>
@@ -92,7 +94,7 @@ footer{padding:21px 5%;border-top:1px solid #ffffff25;color:#a0b4c3;text-align:c
 <label for="tagline">Main headline (optional)</label><input id="tagline" maxlength="105" placeholder="We'll write Welcome to your business if left blank">
 <div class="two">
 <div><label for="industry">Type of business</label><select id="industry"><option value="service">Local services</option><option value="creative">Creative studio</option><option value="consultant">Consulting</option><option value="shop">Products & shop</option><option value="portfolio">Personal brand</option></select></div>
-<div><label for="theme">Color choices</label><select id="theme"><option value="mint">Green / navy</option><option value="blue">Blue</option><option value="amber">Gold</option><option value="rose">Pink / rose</option></select></div>
+<div><label for="theme">Color choices</label><select id="theme"><option value="violet">Ultra Violet</option><option value="blue">Hyperwave Blue</option><option value="amber">Afterburn Gold</option><option value="rose">Rose / magenta</option><option value="mint">Emerald pulse</option></select></div>
 </div>
 </fieldset>
 <fieldset><legend>Reasons to choose you</legend>
@@ -126,16 +128,16 @@ footer{padding:21px 5%;border-top:1px solid #ffffff25;color:#a0b4c3;text-align:c
 "use strict";
 var KEY="whatif_website_starter_v1";
 var inputIds=["business","tagline","description","industry","theme","service1","service2","service3","email","phone","cta","location"];
-var defaults={business:"",tagline:"",description:"",industry:"service",theme:"mint",service1:"Reliable service",service2:"Friendly communication",service3:"Ready to help",email:"",phone:"",cta:"GET IN TOUCH",location:""};
-var example={business:"Mary's Cleaning Service",tagline:"A cleaner home. A happier day.",description:"Friendly home and office cleaning in Dallas. We make it easy to enjoy a fresh space.",industry:"service",theme:"mint",service1:"Friendly local service",service2:"Clear upfront communication",service3:"Flexible scheduling",email:"hello@example.com",phone:"",cta:"CONTACT MARY",location:"Serving Dallas and nearby communities"};
-var themes={mint:{accent:"#17dd98",deep:"#061a20",glow:"#26cfa855"},blue:{accent:"#45c7ff",deep:"#0c1930",glow:"#358eff66"},amber:{accent:"#ffd17b",deep:"#291c15",glow:"#facb4566"},rose:{accent:"#ff7dbb",deep:"#281827",glow:"#ff67c266"}};
+var defaults={business:"",tagline:"",description:"",industry:"service",theme:"violet",service1:"Reliable service",service2:"Friendly communication",service3:"Ready to help",email:"",phone:"",cta:"GET IN TOUCH",location:""};
+var example={business:"Mary's Cleaning Service",tagline:"A cleaner home. A happier day.",description:"Friendly home and office cleaning in Dallas. We make it easy to enjoy a fresh space.",industry:"service",theme:"violet",service1:"Friendly local service",service2:"Clear upfront communication",service3:"Flexible scheduling",email:"hello@example.com",phone:"",cta:"CONTACT MARY",location:"Serving Dallas and nearby communities"};
+var themes={violet:{accent:"#bb94ff",secondary:"#5ddfff",deep:"#0e0a29",glow:"#a055ff92"},blue:{accent:"#55ddff",secondary:"#61f1eb",deep:"#07192c",glow:"#0d99ed91"},amber:{accent:"#ffbf79",secondary:"#ff6f87",deep:"#26121d",glow:"#ef8e4f8a"},rose:{accent:"#ff7dbb",secondary:"#b68aff",deep:"#281827",glow:"#ff67c289"},mint:{accent:"#47e7bd",secondary:"#69ccff",deep:"#081d23",glow:"#26cfa877"}};
 function esc(v){return String(v==null?"":v).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
 function get(){var data={};inputIds.forEach(function(id){var el=document.getElementById(id);data[id]=el?el.value:"";});return data;}
 function set(data){inputIds.forEach(function(id){var el=document.getElementById(id);if(!el)return;var v=Object.prototype.hasOwnProperty.call(data,id)?data[id]:defaults[id];el.value=String(v==null?"":v).slice(0,el.maxLength>0?el.maxLength:200);});document.getElementById("quick-contact").value=data.email||data.phone||"";}
 function safeEmail(value){value=String(value||"").trim();return /^[^\s@<>:"'\\]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(value)&&value.length<=140?value:"";}
 function safeTel(value){value=String(value||"");var clean=value.replace(/[^0-9+]/g,"");return clean.replace(/(?!^)\+/g,"").length>=7?clean.replace(/(?!^)\+/g,""):"";}
 function page(d){
-var palette=themes[d.theme]||themes.mint;
+var palette=themes[d.theme]||themes.violet;
 var brand=esc(d.business.trim()||"Your Business");
 var headline=esc(d.tagline.trim()||("Welcome to "+(d.business.trim()||"your business")));
 var body=esc(d.description.trim()||"Helping customers get things done with care and confidence.");
@@ -152,7 +154,7 @@ var footerContact=[emailContact,telContact].filter(Boolean).join(' <span class="
 var title=esc((d.business.trim()||"Your Business")+" — "+(d.tagline.trim()||"Welcome").slice(0,65));
 return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'+
 '<meta name="description" content="'+esc((d.description||"Business website").slice(0,155))+'"><meta name="theme-color" content="'+palette.deep+'"><title>'+title+'</title>'+
-'<style>:root{--a:'+palette.accent+';--bg:'+palette.deep+';--glow:'+palette.glow+';color-scheme:dark}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:#f7fcff;background:radial-gradient(ellipse 780px 650px at 88% 7%,var(--glow),transparent 65%),radial-gradient(ellipse 500px 400px at 5% 80%,#163f5a55,transparent 68%),var(--bg);font:16px/1.62 system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--a)}a:focus-visible{outline:3px solid #fff;outline-offset:4px}header{padding:24px clamp(20px,5vw,70px);border-bottom:1px solid #ffffff23;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.brand{font-weight:1000;letter-spacing:-.05em;font-size:clamp(21px,3vw,27px);color:white;text-decoration:none}.nav{color:#b6d6db;text-decoration:none;font-size:12px;font-weight:900;letter-spacing:.14em}.wrap{max-width:1320px;margin:auto;padding:0 clamp(23px,6vw,85px)}.hero{padding-top:clamp(85px,13vw,177px);padding-bottom:clamp(105px,15vw,190px);position:relative}.eyebrow{font-size:12px;font-weight:900;letter-spacing:.22em;color:var(--a)}h1{font-size:clamp(46px,8.3vw,114px);letter-spacing:-.075em;line-height:1.02;max-width:1000px;margin:22px 0 25px}h1 em{font-style:normal;color:var(--a)}.intro{font-size:clamp(17px,2vw,22px);line-height:1.65;max-width:690px;color:#c8d9e3;margin:0 0 36px}.primary{display:inline-block;padding:15px 24px;border-radius:11px;background:var(--a);color:#071416;text-decoration:none;font-weight:950;box-shadow:0 14px 50px var(--glow)}.muted-cta{background:#24403b;color:#d6f5ef;box-shadow:none;font-size:13px}.line{height:1px;background:linear-gradient(90deg,var(--a),#ffffff22,transparent)}.services{padding:80px 0 90px}.kicker{font-weight:900;font-size:12px;letter-spacing:.2em;color:var(--a)}h2{font-size:clamp(31px,5vw,55px);letter-spacing:-.055em;margin:13px 0 25px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.item{padding:28px 22px;background:#ffffff0b;border:1px solid #ffffff2a;border-radius:17px;min-height:160px;display:flex;flex-direction:column;gap:24px}.item span{color:var(--a);font-weight:900;letter-spacing:.1em}.item strong{font-size:20px;line-height:1.28}.contact{padding:45px 0 100px}.contact p{font-size:18px;color:#d2e1ea}.area{font-size:14px!important;color:#9be2c8!important}footer{border-top:1px solid #ffffff29;padding:31px clamp(23px,6vw,85px);font-size:13px;color:#acc5d0;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}footer a{color:#e6fff9}.sep{margin:0 6px;color:#829eaa}@media(max-width:700px){.hero{padding-top:90px;padding-bottom:100px}h1{font-size:clamp(43px,11vw,69px)}.services{padding:55px 0}.grid{grid-template-columns:1fr}.item{min-height:115px;gap:12px}header{padding:19px 23px}.nav{font-size:11px}}</style></head><body>'+
+'<style>:root{--a:'+palette.accent+';--b:'+palette.secondary+';--bg:'+palette.deep+';--glow:'+palette.glow+';color-scheme:dark}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:#f7fcff;background:radial-gradient(ellipse 740px 650px at 88% 13%,var(--glow),transparent 65%),radial-gradient(ellipse 500px 400px at 5% 80%,#4c44974a,transparent 68%),var(--bg);font:16px/1.62 system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--b)}body:before{content:"";position:fixed;inset:0;pointer-events:none;background-size:50px 50px;background-image:linear-gradient(#e0e7ff0a 1px,transparent 1px),linear-gradient(90deg,#e0e7ff0a 1px,transparent 1px);mask-image:linear-gradient(90deg,transparent,#000)}header,main,footer{position:relative;z-index:1}a:focus-visible{outline:3px solid #fff;outline-offset:4px}header{padding:24px clamp(20px,5vw,70px);border-bottom:1px solid #ffffff23;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.brand{font-weight:1000;letter-spacing:-.05em;font-size:clamp(21px,3vw,27px);color:white;text-decoration:none}.nav{color:#b6d6db;text-decoration:none;font-size:12px;font-weight:900;letter-spacing:.14em}.wrap{max-width:1320px;margin:auto;padding:0 clamp(23px,6vw,85px)}.hero{padding-top:clamp(85px,13vw,177px);padding-bottom:clamp(105px,15vw,190px);position:relative;isolation:isolate}.hero:after{content:"";position:absolute;right:-12%;top:12%;width:clamp(180px,36vw,460px);aspect-ratio:1;border-radius:32%;transform:rotate(31deg);background:linear-gradient(135deg,var(--b),var(--a));opacity:.32;filter:blur(3px);box-shadow:0 0 110px var(--glow);clip-path:polygon(50% 0,100% 26%,90% 82%,50% 100%,7% 81%,0 24%);z-index:-1}.eyebrow{font-size:12px;font-weight:900;letter-spacing:.22em;color:var(--a)}h1{font-size:clamp(46px,8.3vw,114px);letter-spacing:-.075em;line-height:1.02;max-width:1000px;margin:22px 0 25px;background:linear-gradient(108deg,#f9faff 14%,var(--b) 62%,var(--a) 100%);background-clip:text;-webkit-background-clip:text;color:transparent}h1 em{font-style:normal;color:var(--a)}.intro{font-size:clamp(17px,2vw,22px);line-height:1.65;max-width:690px;color:#c8d9e3;margin:0 0 36px}.primary{display:inline-block;padding:15px 24px;border-radius:11px;background:linear-gradient(105deg,var(--b),var(--a));color:#071416;text-decoration:none;font-weight:950;box-shadow:0 14px 50px var(--glow)}.muted-cta{background:#24403b;color:#d6f5ef;box-shadow:none;font-size:13px}.line{height:1px;background:linear-gradient(90deg,var(--a),#ffffff22,transparent)}.services{padding:80px 0 90px}.kicker{font-weight:900;font-size:12px;letter-spacing:.2em;color:var(--a)}h2{font-size:clamp(31px,5vw,55px);letter-spacing:-.055em;margin:13px 0 25px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.item{padding:28px 22px;background:#ffffff0b;border:1px solid #ffffff2a;border-radius:17px;min-height:160px;display:flex;flex-direction:column;gap:24px}.item span{color:var(--a);font-weight:900;letter-spacing:.1em}.item strong{font-size:20px;line-height:1.28}.contact{padding:45px 0 100px}.contact p{font-size:18px;color:#d2e1ea}.area{font-size:14px!important;color:#9be2c8!important}footer{border-top:1px solid #ffffff29;padding:31px clamp(23px,6vw,85px);font-size:13px;color:#acc5d0;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}footer a{color:#e6fff9}.sep{margin:0 6px;color:#829eaa}@media(max-width:700px){.hero{padding-top:90px;padding-bottom:100px}h1{font-size:clamp(43px,11vw,69px)}.services{padding:55px 0}.grid{grid-template-columns:1fr}.item{min-height:115px;gap:12px}header{padding:19px 23px}.nav{font-size:11px}}</style></head><body>'+
 '<header><a class="brand" href="#top">'+brand+'</a><a class="nav" href="#contact">CONTACT</a></header>'+
 '<main id="top"><div class="wrap"><section class="hero"><div class="eyebrow">'+esc(category)+' / WELCOME</div><h1>'+headline+'</h1><p class="intro">'+body+'</p>'+contact+'</section><div class="line"></div>'+
 '<section class="services" id="services"><div class="kicker">WHY CHOOSE US</div><h2>The important details.</h2><div class="grid">'+(notes||'<div class="item"><strong>Thoughtful service, made for you.</strong></div>')+'</div></section><div class="line"></div>'+
@@ -161,7 +163,9 @@ return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="v
 }
 function preview(){var html=page(get());document.getElementById("site-preview").srcdoc=html;}
 var timeout;
-function save(){var data=get();try{localStorage.setItem(KEY,JSON.stringify(data));document.getElementById("status").textContent="Your changes are saved automatically."; }catch(e){document.getElementById("status").textContent="Saving on this device is unavailable. Download your page to keep it.";}clearTimeout(timeout);timeout=setTimeout(preview,100);}
+function syncSwatches(){var active=document.getElementById("theme").value;document.querySelectorAll("[data-design]").forEach(function(button){button.setAttribute("aria-pressed",String(button.dataset.design===active));});}
+function save(){syncSwatches();var data=get();try{localStorage.setItem(KEY,JSON.stringify(data));document.getElementById("status").textContent="Your changes are saved automatically."; }catch(e){document.getElementById("status").textContent="Saving on this device is unavailable. Download your page to keep it.";}clearTimeout(timeout);timeout=setTimeout(preview,100);}
+document.querySelectorAll("[data-design]").forEach(function(button){button.addEventListener("click",function(){document.getElementById("theme").value=button.dataset.design;save();});});
 var builder=document.getElementById("builder");
 var contact=document.getElementById("quick-contact");
 contact.addEventListener("input",function(){var value=contact.value.trim();document.getElementById("email").value=value.includes("@")?value:"";document.getElementById("phone").value=value.includes("@")?"":value;save();if(value&&!safeEmail(value)&&!safeTel(value))document.getElementById("status").textContent="Add a full email address or phone number to activate the contact button.";});
@@ -178,7 +182,11 @@ document.getElementById("mobile").addEventListener("click",function(){mode("mobi
 document.getElementById("desktop").addEventListener("click",function(){mode("desktop");});
 var stored=null;
 try{stored=JSON.parse(localStorage.getItem(KEY)||"null");}catch(e){}
-set(stored&&typeof stored==="object"&&!Array.isArray(stored)?stored:defaults);preview();
+var state=stored&&typeof stored==="object"&&!Array.isArray(stored)?stored:defaults;
+var chosen=new URLSearchParams(location.search).get("design");
+if(["violet","blue","amber"].includes(chosen))state=Object.assign({},state,{theme:chosen});
+set(state);syncSwatches();preview();
+if(["violet","blue","amber"].includes(chosen))save();
 })();
 </script>
 </body></html>
