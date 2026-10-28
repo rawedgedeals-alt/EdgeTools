@@ -1,4 +1,38 @@
-/* WHATIF sponsored placements. Edit ads.json to activate real paid campaigns. */
-(()=>{const css=document.createElement("style");css.textContent=`.ad-slot{margin:24px 6%;border:1px solid #26f3a077;border-radius:22px;padding:25px;background:linear-gradient(115deg,#10342d,#152443 65%,#341747);box-shadow:0 0 32px #26f3a016;position:relative;overflow:hidden}.ad-slot::before{content:"";position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,#26f3a0,#44d9ff,#f352dd)}.ad-label{font-size:10px;letter-spacing:2px;color:#a8c1c0;font-weight:900}.ad-slot h2{font-size:clamp(22px,4vw,38px);margin:8px 0}.ad-slot p{color:#d1dfec;margin:4px 0 15px}.ad-slot a{display:inline-block;background:#26f3a0;color:#06150e;padding:10px 20px;border-radius:10px;font-weight:900;text-decoration:none}.ad-hero{margin-top:30px}.ad-mid{margin-top:0}.ad-bottom{margin-bottom:45px}.ad-empty{border-style:dashed}.ad-empty a{background:transparent;color:#aef8da;border:1px solid #26f3a088}@media(max-width:600px){.ad-slot{margin-left:5%;margin-right:5%;padding:22px}}`;document.head.append(css);
-const slots=[["hero",document.querySelector(".hero"),"afterend"],["mid",document.querySelector("#tools"),"afterend"],["bottom",document.querySelector("footer"),"beforebegin"]];
-function place(campaigns){for(const [id,anchor,where] of slots){if(!anchor)continue;const campaign=campaigns.find(x=>x.slot===id&&x.active===true&&/^https:\/\//.test(x.url));const wrap=document.createElement("aside");wrap.className="ad-slot ad-"+id+(campaign?"":" ad-empty");wrap.setAttribute("aria-label",campaign?"Sponsored advertisement":"Advertising opportunity");const small=document.createElement("div");small.className="ad-label";small.textContent=campaign?"SPONSORED":"ADVERTISING OPPORTUNITY";const h=document.createElement("h2");h.textContent=campaign?campaign.headline:"YOUR BRAND. THEIR NEXT BIG MOVE.";const p=document.createElement("p");p.textContent=campaign?campaign.description:"Premium WHATIF placements are available for software and AI brands.";const a=document.createElement("a");a.textContent=campaign?(campaign.cta||"LEARN MORE →"):"INQUIRE ABOUT ADVERTISING →";a.href=campaign?campaign.url:"./advertise.html";if(campaign){a.rel="sponsored noopener noreferrer";a.target="_blank"}wrap.append(small,h,p,a);anchor.insertAdjacentElement(where,wrap)}}fetch("./ads.json",{cache:"no-store"}).then(r=>r.ok?r.json():[]).then(data=>place(Array.isArray(data)?data:[])).catch(()=>place([]))})();
+/* WHATIF advertising: only active, approved, paid campaigns appear.
+   No free placeholder billboards on the first-party software storefront. */
+(() => {
+  "use strict";
+  const positions = [
+    ["hero", document.querySelector("#tools"), "afterend"],
+    ["mid", document.querySelector("#guides"), "afterend"],
+    ["bottom", document.querySelector("footer"), "beforebegin"]
+  ];
+  const css = document.createElement("style");
+  css.textContent = '.ad-slot{position:relative;overflow:hidden;margin:24px 4%;padding:23px 28px;background:linear-gradient(120deg,#141935,#281c4b 68%,#182842);border:1px solid #a591ff8f;border-radius:19px;box-shadow:0 14px 46px #03041670}.ad-slot:before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#6fe6ff,#a58dff,#ff7ccb)}.ad-label{font-size:11px;letter-spacing:.13em;font-weight:950;color:#b6a4ff}.ad-slot h2{font-size:clamp(22px,4vw,35px);margin:8px 0;color:#fff}.ad-slot p{font-size:15px;color:#d2d4eb;margin:4px 0 16px}.ad-slot a{display:inline-block;padding:11px 17px;border-radius:9px;background:#b9a6ff;color:#0e0926;text-decoration:none;font-size:13px;font-weight:900}.ad-slot a:focus-visible{outline:3px solid #72e7ff;outline-offset:4px}@media(max-width:600px){.ad-slot{margin:20px 5%;padding:20px}}';
+  document.head.appendChild(css);
+  const safeUrl = (u) => {
+    try { const url = new URL(u); return url.protocol === "https:" ? url.href : null; } catch { return null; }
+  };
+  fetch("./ads.json", {cache:"no-store"})
+    .then(r => r.ok ? r.json() : [])
+    .then(data => {
+      if (!Array.isArray(data)) return;
+      for (const [slot, anchor, direction] of positions) {
+        if (!anchor) continue;
+        const campaign = data.find(x => x && x.slot === slot && x.active === true && safeUrl(x.url) && typeof x.headline === "string" && x.headline.trim());
+        if (!campaign) continue; // No sponsor, no advertisement.
+        const wrap = document.createElement("aside");
+        wrap.className = "ad-slot ad-"+slot;
+        wrap.setAttribute("aria-label","Paid sponsored advertisement");
+        const label = document.createElement("div");
+        label.className="ad-label";
+        label.textContent="PAID ADVERTISEMENT";
+        const h=document.createElement("h2"); h.textContent=campaign.headline.slice(0,100);
+        const p=document.createElement("p"); p.textContent=String(campaign.description||"").slice(0,350);
+        const a=document.createElement("a"); a.href=safeUrl(campaign.url);
+        a.target="_blank"; a.rel="sponsored noopener noreferrer"; a.textContent=String(campaign.cta||"LEARN MORE").slice(0,70);
+        wrap.append(label,h,p,a);
+        anchor.insertAdjacentElement(direction,wrap);
+      }
+    }).catch(() => {});
+})();
