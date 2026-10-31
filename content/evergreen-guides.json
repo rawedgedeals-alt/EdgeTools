@@ -1,0 +1,192 @@
+[
+  {
+    "slug": "cut-small-business-software-subscription-costs",
+    "title": "How to Cut Small Business Software Subscription Costs",
+    "summary": "A practical, no-jargon process to inventory recurring subscriptions, remove overlap and choose which business software to keep.",
+    "publish_date": "2026-10-31",
+    "editorial_approved": true,
+    "tool_path": "software-stack-planner.html",
+    "sections": [
+      {
+        "heading": "Start with the subscriptions you already have",
+        "paragraphs": [
+          "Small monthly charges add up because software is bought one problem at a time. A calendar app, scheduling platform, client portal, invoicing service and all-in-one business suite may overlap in ways that are difficult to notice until you write them down. The first step is not buying a new tool. It is seeing what your business already pays for.",
+          "Make a simple list of each provider, the amount billed, renewal date, owner of the account, and what people actually use it for. Include annual contracts and introductory pricing. An app that is free today may have a paid renewal or limits that matter later. Use a private spreadsheet or WHATIF's free Stack Planner as your starting inventory."
+        ]
+      },
+      {
+        "heading": "Look for duplicate jobs",
+        "paragraphs": [
+          "Group subscriptions by the problem they solve: website, scheduling, email, documents, customer tracking, design, automation, payments or reporting. Two products can belong to one category without being interchangeable, so check the exact features you use before deciding one is redundant.",
+          "Ask who uses each tool in a normal week and what would break if it disappeared tomorrow. Consider integrations, data export, training time, accessibility, security and service limits. A cheaper product that forces several hours of rework each month may not actually save money."
+        ]
+      },
+      {
+        "heading": "Calculate the annual impact",
+        "paragraphs": [
+          "Monthly totals are useful, but annual costs often reveal the true commitment. Multiply recurring monthly charges by twelve and add annual-only fees. If a vendor uses usage-based pricing, note the range rather than inventing an exact future bill. Include taxes and renewal changes where relevant.",
+          "Before canceling, inspect the cancellation date, refund terms, data retention policy and export options. Save records you need and plan any migration. Cancellations can affect customers, so avoid turning off a live booking or payment workflow without checking dependencies."
+        ]
+      },
+      {
+        "heading": "Review regularly, without obsessing",
+        "paragraphs": [
+          "Revisit the inventory when a contract is due, a tool is no longer used or a new business need arises. A short quarterly review is often more useful than checking everything every day. Pick a clear owner for each subscription and keep documentation together.",
+          "WHATIF's free Software Stack Planner lets you organize recurring tools and export a CSV in your own browser. It does not connect to bank accounts or automatically cancel subscriptions; you stay in control. The goal is simpler decisions, not another subscription to manage."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "business-website-content-checklist",
+    "title": "What to Put on a Small Business Website Before You Launch",
+    "summary": "A simple checklist of the business details, customer questions and contact information that make a one-page website useful.",
+    "publish_date": "2026-11-03",
+    "editorial_approved": true,
+    "tool_path": "website-starter.html",
+    "sections": [
+      {
+        "heading": "Make the first screen answer a real question",
+        "paragraphs": [
+          "A visitor should be able to tell what your business does, who it serves and how to take the next step without hunting through several menus. Start with your business name, a plain-language description and one primary action. If you offer local services, clarify the service area rather than listing every nearby city for search engines.",
+          "Imagine explaining your business to someone who has never met you. Replace general claims such as 'the best solutions' with specific information about the service you offer. Clear writing often improves a small page more than extra effects or complicated design."
+        ]
+      },
+      {
+        "heading": "Give people enough information to decide",
+        "paragraphs": [
+          "Answer the common practical questions: what is offered, how it works, approximate service boundaries, hours or response expectations, and who the service is for. Add trustworthy examples only when you have permission and can verify them. Avoid fabricated customer reviews or guarantees.",
+          "Photos can help, but they should be relevant, licensed for your use and readable on a phone. A lightweight page with clear headings and sufficient contrast is often easier to use than a dramatic page that hides the details."
+        ]
+      },
+      {
+        "heading": "Make contact simple and safe",
+        "paragraphs": [
+          "Choose a contact path that you really monitor: phone, business email, booking link or physical location. Do not promise immediate replies if that is not realistic. If you collect information through a form, explain what you need and how it will be handled; avoid collecting sensitive details without a reason.",
+          "Check every link and call-to-action on a phone. Confirm that tapping a number starts the expected phone action and that any email address is correct. Simple usability checks prevent avoidable lost inquiries."
+        ]
+      },
+      {
+        "heading": "Understand the difference between a file and a hosted site",
+        "paragraphs": [
+          "A downloadable HTML file is a real website document, but it is not automatically visible at a public domain. Going live normally involves hosting, a domain or subdomain, and checking how the page behaves online. Search visibility can take additional time and is not guaranteed.",
+          "WHATIF's free Website Starter helps you enter the basics, preview a design and download a standalone HTML file. It does not automatically host that file or accept customer payments. Use it to get a clear starting point before deciding which publishing service fits your needs."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "how-to-budget-for-software-tools",
+    "title": "How to Build a Realistic Software Budget for a Small Business",
+    "summary": "Estimate monthly, yearly and usage-based software expenses without relying on hidden assumptions or promotional prices.",
+    "publish_date": "2026-11-10",
+    "editorial_approved": true,
+    "tool_path": "software-cost-calculator.html",
+    "sections": [
+      {
+        "heading": "Separate essential tools from optional conveniences",
+        "paragraphs": [
+          "Start with the operations your business cannot run without: accepting inquiries, organizing customers, communicating, collecting payments or managing records. The exact list depends on your work. A solo service provider may need a very different setup from an online store.",
+          "List the tool serving each essential function and the amount you actually pay. Then note conveniences that are helpful but not critical. This separates real needs from the excitement of signing up for another appealing product."
+        ]
+      },
+      {
+        "heading": "Count beyond the advertised monthly price",
+        "paragraphs": [
+          "Software subscriptions can be billed monthly, annually, per user or according to usage. Some features may be available only on a higher tier, and promotions can expire. Write down the billing unit and renewal conditions for each service so the comparison uses the same timeframe.",
+          "Annual cost is not always twelve times a simple headline price. Account for one-time setup, additional seats, required integrations and potential increases at renewal. If costs depend on traffic or volume, use a reasonable range rather than presenting a false exact number."
+        ]
+      },
+      {
+        "heading": "Leave room for growth and cancellation",
+        "paragraphs": [
+          "A budget should allow for a modest change in users, activity and business needs, while avoiding purchases for hypothetical growth that may never arrive. Check whether your tools offer data export and whether a lower tier can handle your current workload.",
+          "Review subscriptions before renewal rather than only after a bill arrives. Keep a brief note of why you chose a tool so you can evaluate it against the original purpose later."
+        ]
+      },
+      {
+        "heading": "Use a transparent starting estimate",
+        "paragraphs": [
+          "WHATIF's free Software Cost Calculator organizes recurring expenses and basic first-year estimates. It is not a live pricing feed and cannot confirm a vendor's current plan price. Verify the provider's official pricing and terms before committing.",
+          "Combine the calculator with a simple inventory and decide which expense actually solves a problem. A good software budget gives a clearer picture of decisions, not a guarantee about future bills."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "simple-software-stack-for-non-coders",
+    "title": "A Simple Software Stack for People Who Don't Speak Code",
+    "summary": "How to choose website, communication, documents and planning tools without buying more technology than your business needs.",
+    "publish_date": "2026-11-17",
+    "editorial_approved": true,
+    "tool_path": "software-stack-planner.html",
+    "sections": [
+      {
+        "heading": "Start with the job, not the software category",
+        "paragraphs": [
+          "Technology choices get confusing when a search starts with product names instead of the thing you are trying to accomplish. Write one sentence about the outcome: 'customers can request an appointment' or 'I can see which invoices are unpaid.' That helps narrow the choices before comparing features.",
+          "Break larger tasks into everyday steps and decide which steps actually need an app. Some processes may work well with a document or spreadsheet. The goal is to make work easier, not to collect an impressive list of subscriptions."
+        ]
+      },
+      {
+        "heading": "Build around the essential connections",
+        "paragraphs": [
+          "A very small business might begin with a website or landing page, a reliable contact method, basic document storage and a simple way to track work. A different business may need booking or selling tools. Choose only what your real workflow requires.",
+          "Before adding an integration, confirm that the connection is supported by both services and understand what information it shares. An automated workflow that fails silently can create more work than a simple manual task."
+        ]
+      },
+      {
+        "heading": "Compare usability and exit options",
+        "paragraphs": [
+          "Consider whether the interface makes sense to the people using it, whether customers can access it from their devices, and what support is available. Price matters, but so do training, security and accessibility. Avoid assuming that a free plan will remain sufficient for every growing business.",
+          "Check how to export your records before becoming dependent on a platform. Knowing how to leave is part of choosing responsibly, even when you expect to keep a tool for a long time."
+        ]
+      },
+      {
+        "heading": "Keep the stack visible",
+        "paragraphs": [
+          "Track who owns each subscription, its renewal date, and why it remains useful. Review your setup when a business process changes rather than buying something new every week. A short documented workflow is easier to maintain than an undocumented collection of automation rules.",
+          "WHATIF's free Software Stack Planner helps you organize your tools and estimate recurring commitments in your browser. It is a planning aid, not a connected account manager, and it does not cancel subscriptions for you."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "website-file-vs-live-website-explained",
+    "title": "A Downloaded Website File vs. a Live Website: What's the Difference?",
+    "summary": "Understand HTML files, hosting, domains, mobile testing and what it takes to make a business website publicly accessible.",
+    "publish_date": "2026-11-24",
+    "editorial_approved": true,
+    "tool_path": "website-starter.html",
+    "sections": [
+      {
+        "heading": "A website file is the content and design",
+        "paragraphs": [
+          "An HTML file can contain the structure, writing and style of a web page. When opened in a browser on your computer or phone, it can display a working preview without being published to the internet. That is useful for planning and sharing a prototype.",
+          "A local preview does not mean customers can visit the page at a public address. It may also behave differently when moved to a hosting service, especially if it depends on files or external features that were not included."
+        ]
+      },
+      {
+        "heading": "Hosting makes it reachable",
+        "paragraphs": [
+          "A hosting provider stores and serves your website so other people can request it over the internet. A domain is the name people type to find it. Some services provide a temporary subdomain, while a custom domain is usually registered and configured separately.",
+          "Publishing can involve connecting the domain, enabling HTTPS, uploading files and confirming that the correct page is served. These are separate steps from choosing colors or writing a headline."
+        ]
+      },
+      {
+        "heading": "Test before you share the link",
+        "paragraphs": [
+          "Open the public page on a phone and a desktop, ideally through more than one browser. Check that buttons and links work, text fits the screen and contact information is correct. If you use a form, test where submissions actually go. A design preview alone cannot verify live delivery.",
+          "Accessibility matters too: use clear headings, sufficient contrast, readable font sizes and meaningful link labels. If the page uses images, ensure they have appropriate descriptions or are marked decorative."
+        ]
+      },
+      {
+        "heading": "Visibility is another step",
+        "paragraphs": [
+          "Going live does not automatically bring visitors. Search engines may need time to discover pages, and rankings depend on many factors. Useful writing, accurate business information, working links and clear page titles are sensible foundations without guaranteeing a particular number of visits.",
+          "WHATIF's free Website Starter makes a one-page HTML website file you can preview and download. Hosting, domain registration, business email, payment processing and ongoing maintenance are separate choices. Knowing the difference helps you decide what to do next."
+        ]
+      }
+    ]
+  }
+]
