@@ -1,4 +1,4 @@
-name: EdgeTools daily provider monitoring
+name: EdgeTools weekly provider monitoring
 on:
   schedule:
     - cron: '17 11 * * 1'
@@ -27,7 +27,7 @@ jobs:
           previous=json.loads(Path('/tmp/old-provider-report.json').read_text())
           latest=json.loads(Path('monitor-status.json').read_text())
           if previous.get('providers')==latest.get('providers'):
-              Path('monitor-status.json').write_text(json.dumps(previous,indent=2)+'\\n')
+              Path('monitor-status.json').write_text(json.dumps(previous,indent=2)+'\n')
               print('No provider change. Skipping versioned status update.')
           PY
           fi
@@ -37,6 +37,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add monitor-status.json
           if ! git diff --cached --quiet; then
-            git commit -m "Update daily provider link monitoring report"
+            git commit -m "Update provider link monitoring report"
             git push
           fi
