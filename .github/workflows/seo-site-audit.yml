@@ -1,5 +1,9 @@
 name: WHATIF Weekly SEO and Site Audit
 on:
+  push:
+    paths:
+      - '.github/workflows/seo-site-audit.yml'
+      - 'scripts/site_audit.py'
   workflow_dispatch:
   schedule:
     - cron: '27 15 * * 1'
