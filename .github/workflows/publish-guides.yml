@@ -6,7 +6,7 @@ on:
       - 'scripts/publish_guides.py'
       - 'content/evergreen-guides.json'
   schedule:
-    - cron: '11 15 * * 1'
+    - cron: '11 15 * * *'
   workflow_dispatch:
 permissions:
   contents: write
