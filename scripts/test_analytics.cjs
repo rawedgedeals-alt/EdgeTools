@@ -49,18 +49,30 @@ s.choose('granted');
 assert.equal(s.tags().length, 1, 'Repeated consent must not insert a duplicate tag');
 assert.equal(configs().length, 1, 'Repeated consent must not duplicate page views');
 const card = { querySelector: sel => ({ textContent: sel === 'h3' ? 'Shopify' : 'COMMERCE' }) };
-const link = { href:'https://shopify.com/?affiliate=private', rel:'sponsored noopener', closest: sel => sel === '.card' ? card : null };
-const click = () => s.document.handlers.click({target:{closest:sel => sel === 'a[href]' ? link : null}});
+const link = { href:'https://shopify.com/?affiliate=private', rel:'sponsored noopener', dataset: {}, closest: sel => sel === '.card' ? card : null };
+const click = (clicked = link) => s.document.handlers.click({target:{closest:sel => sel === 'a[href]' ? clicked : null}});
 click();
 const events = () => s.commands().filter(x => x[0] === 'event');
 assert.equal(events().length, 1);
 assert.equal(events()[0][1], 'tool_click');
 assert.equal(events()[0][2].provider_domain, 'shopify.com');
 assert(!JSON.stringify(events()).includes('private'), 'Outbound query values must not be collected');
+const guideLink = {
+  ...link,
+  dataset: { affiliateProvider: 'Shopify' },
+  relList: { contains: rel => rel === 'sponsored' },
+  closest: () => null
+};
+click(guideLink);
+assert.equal(events().length, 2);
+assert.equal(events()[1][1], 'affiliate_click');
+assert.equal(events()[1][2].provider, 'Shopify');
+assert(!JSON.stringify(events()).includes('private'), 'Affiliate query values must not be collected');
 s.choose('denied');
 assert.equal(s.window['ga-disable-G-TEST123'], true);
 click();
-assert.equal(events().length, 1, 'Revoking consent must stop custom events');
+click(guideLink);
+assert.equal(events().length, 2, 'Revoking consent must stop custom events');
 const returning = setup({saved:'granted'});
 assert.equal(returning.tags().length, 1, 'Returning consenting visitors start once');
 assert.equal(setup({saved:'denied'}).tags().length, 0);

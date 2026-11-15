@@ -100,6 +100,10 @@
     const url = new URL(link.href, location.href);
     if (url.protocol === 'mailto:') { event('contact_click', { placement: link.closest('.ad-slot') ? 'ad' : 'page' }); return; }
     if (url.protocol !== 'https:' || url.hostname === location.hostname) return;
+    if (link.dataset.affiliateProvider && link.relList.contains('sponsored')) {
+      event('affiliate_click', { provider: link.dataset.affiliateProvider });
+      return;
+    }
     const card = link.closest('.card');
     if (card) event('tool_click', {
       tool_name: card.querySelector('h3')?.textContent || '',
